@@ -1,0 +1,68 @@
+/******************************************************************************\
+FILE:           participant.zm
+AUTHOR:         Theo Veenker (UiL-OTS) <T.J.G.Veenker@uu.nl>
+ADAPTED BY:     -
+
+DESCRIPTION:
+
+Provides participant database record field create and check functions.
+
+
+HISTORY:
+2011-08-27 TV   Created as part of the standard Zep modules.
+
+\******************************************************************************/
+
+
+// Creates required participant record fields.
+void create_participant_fields()
+{
+    expdb.participant.add_enum_field("expertise", "novice|expert");
+    expdb.participant.add_enum_field("list_one_two", "one|two");
+}
+
+
+// Checks current values of participant record fields.
+/* int check_participant_fields()
+{
+	if (	!expdb.participant.has_enum_field("expertise")) return ERROR;
+	if (	expdb.participant.get_int_field("list_zero_one") != 0 
+		&& 	expdb.participant.get_int_field("list_zero_one") != 1) return ERROR;
+		
+    return OK;
+} */
+
+// Checks current values of participant record fields.
+int check_participant_fields()
+{
+    // check whether we have a enum expertise
+    if (!expdb.participant.has_enum_field("expertise"))
+    {
+        print_error("EXPERTISE is not set (expert|novice)\n");
+        return ERROR;
+    }
+
+    // Test whether it  is set correctly.
+    if (expdb.participant.get_enum_field("expertise") != "novice" &&
+        expdb.participant.get_enum_field("expertise") != "expert")
+    {
+        print_error("Expertise is not filled out correctly\n");
+        return ERROR;
+    }
+
+    if (!expdb.participant.has_enum_field("list_one_two"))
+    {
+        print_error("List zero or one is not set (one|two)\n");
+        return ERROR;
+    }
+ 
+    // Testa again
+    if (expdb.participant.get_enum_field("list_one_two") != "one" &&
+        expdb.participant.get_enum_field("list_one_two") != "two")
+    {
+        print_error("List is not filled out correctly\n");
+        return ERROR;
+    }
+
+    return OK;
+}

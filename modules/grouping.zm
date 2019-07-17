@@ -1,0 +1,47 @@
+/******************************************************************************\
+FILE:           grouping.zm
+AUTHOR:         Theo Veenker <theo.veenker@beexy.nl>
+ADAPTED BY:     -
+
+DESCRIPTION:
+
+Defines groups and handles participant group assignment.
+
+
+HISTORY:
+2013-02-07 TV   Created.
+
+\******************************************************************************/
+
+
+// Symbolic definition of groups.
+enum TestGroup
+{
+    GRP1,
+    GRP2,
+}
+
+
+/* // Assigns participant to a group.
+int assign_participant_to_group()
+{
+    // The group to assign to depends on the numerical part in the 
+    // participant-id. If the participant-id has no numerical part a
+    // group will be selected at random.
+	if
+    if (select_group_from_participant_id() != OK)
+        select_group_random();
+    
+    return OK;
+}
+ */
+int assign_participant_to_group()
+{
+    if (expdb.participant.get_enum_field("list_one_two") == "one")
+        selected_group = GRP1;
+    else if (expdb.participant.get_enum_field("list_one_two") == "two")
+        selected_group = GRP2;
+    else
+        select_group_random();
+    return OK;
+}

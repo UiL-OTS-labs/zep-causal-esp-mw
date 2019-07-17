@@ -1,0 +1,461 @@
+/******************************************************************************\
+FILE:           task.zm
+AUTHOR:         Theo Veenker <theo.veenker@beexy.nl>
+ADAPTED BY:     -
+
+DESCRIPTION:
+
+Implementation of task: Self-Paced Reading with Moving Window
+See readme.txt for more information.
+
+
+Global structure of this experiment phase:
+
+  - instructions
+
+  - practice part
+      trial
+        stimulus presentation
+        question (conditional)
+
+  - pause
+
+  - test part
+      trial
+        stimulus presentation
+        question (conditional)
+
+
+HISTORY:
+2012-03-19 TV   Created.
+2019-02-10 IM Adapted to record 15 segments rather than 10.
+
+\******************************************************************************/
+
+//requires 1.12;
+
+import std_choose_1of2_page;
+
+import defs;
+import stimuli;
+import shuffle;
+import output;
+import test_page;
+
+
+Block task
+{
+    on_event:entry()
+    {
+        // Possibly some task initialization here.
+    }
+
+    Part instructions
+    {
+        on_event:entry()
+        {
+//            pause_page.set_text_size(1000, 600);
+            pause_page.set_text(
+                "<b>Dear participant,</b>\n"
+                "\n"
+                "Thank you for participating in this experiment.\n"
+                "\n"
+                "You are now going to see sentences on the screen, one after "
+                "the other. Each sentence is broken up into words. You can "
+                "reveal the sentence word-by-word by repeatedly hitting "
+                "the spacebar. "
+//                "the button in front of you. "
+                "This way you walk through each sentence. Your task is to "
+                "<i>silently</i> read each sentence as quickly as possible.\n"
+                "\n"
+                "Sometimes a statement about a sentence comes up. You then "
+                "have to indicate whether the statement is correct or not. "
+                "Therefore it is important that you really <i>read</i> each "
+                "sentence.\n"
+                "\n"
+                "First we will do a short practice.\n"
+                "\n"
+                "<i>Hit Enter when ready to start.</i>", 
+//                "<i>Hit any button on the button-box when ready to start.</i>", 
+                true);
+
+            pause_page.action(this);
+            control.button_box.enable_all_buttons(CONTINUE);
+        }
+    }
+
+
+    Block practice
+    {
+        TestItem        item;   // current item
+
+
+        on_event:entry()
+        {
+            num_cycles = prac_items.size;
+
+            // Prepare test page: progress bar and prompt enabled.
+            test_page.setup(num_cycles, true);
+        }
+
+
+        on_event:exit()
+        {
+            test_page.cleanup();
+        }
+
+
+        Trial trial
+        {
+            on_event:entry()
+            {
+                item = prac_items[practice.cycle];
+                control.target = test_page;
+            }
+
+
+            SubTrial presentation
+            {
+                on_event:entry()
+                {
+                    test_page.action(this, item, reference_time, practice.cycle);
+                }
+            }
+
+
+            TransientPart
+            {
+                on_event:entry()
+                {
+                    // Check if we need to ask a comprehension question.
+                    if (length(item.question_a) == 0)
+                        trial.leave();  // No question. Trial done.
+                }
+            }
+
+            SubTrial questiona
+            {
+                on_event:entry()
+                {
+                    control.target = choose_1of2_page;
+                    choose_1of2_page.set_text(item.question_a);
+                    choose_1of2_page.set_label_texts(" Yes ", " No ");
+                    choose_1of2_page.set_answer_values(1, 0);
+                    // Or choose the other way around with false and true
+//                    choose_1of2_page.set_label_texts("False", "True");
+//                    choose_1of2_page.set_answer_values(0, 1);
+                    choose_1of2_page.set_keys(KEY_Shift_L, KEY_Shift_R);
+                    choose_1of2_page.action(this, item.qans_a);
+                    // inform the control that choose_1of2_page must
+                    // get an event.
+                    
+                }
+            }
+            SubTrial questionb
+            {
+                on_event:entry()
+                {
+                    control.target = choose_1of2_page;
+                    choose_1of2_page.set_text(item.question_b);
+                    choose_1of2_page.set_label_texts(" Yes ", " No ");
+                    choose_1of2_page.set_answer_values(1, 0);
+                    // Or choose the other way around with false and true
+//                    choose_1of2_page.set_label_texts("False", "True");
+//                    choose_1of2_page.set_answer_values(0, 1);
+                    choose_1of2_page.set_keys(KEY_Shift_L, KEY_Shift_R);
+                    choose_1of2_page.action(this, item.qans_b);
+                    
+                }
+            }
+            SubTrial questionc
+            {
+                on_event:entry()
+                {
+                    control.target = choose_1of2_page;
+                    choose_1of2_page.set_text(item.question_c);
+                    choose_1of2_page.set_label_texts(" Yes ", " No ");
+                    choose_1of2_page.set_answer_values(1, 0);
+                    // Or choose the other way around with false and true
+//                    choose_1of2_page.set_label_texts("False", "True");
+//                    choose_1of2_page.set_answer_values(0, 1);
+                    choose_1of2_page.set_keys(KEY_Shift_L, KEY_Shift_R);
+                    choose_1of2_page.action(this, item.qans_c);
+                    
+                }
+            }
+            SubTrial questiond
+            {
+                on_event:entry()
+                {
+                    control.target = choose_1of2_page;
+                    choose_1of2_page.set_text(item.question_d);
+                    choose_1of2_page.set_label_texts(" Yes ", " No ");
+                    choose_1of2_page.set_answer_values(1, 0);
+                    // Or choose the other way around with false and true
+//                    choose_1of2_page.set_label_texts("False", "True");
+//                    choose_1of2_page.set_answer_values(0, 1);
+                    choose_1of2_page.set_keys(KEY_Shift_L, KEY_Shift_R);
+                    choose_1of2_page.action(this, item.qans_d);
+                }
+            }
+        }
+    }
+
+
+    Part
+    {
+        on_event:entry()
+        {
+            blank_page.action_auto(this, 500ms);
+        }
+    }
+
+
+    Part pause
+    {
+        on_event:entry()
+        {
+            pause_page.set_text(
+                "End of the practice part.\n"
+                "\n"
+                "If you have any questions at this moment please ask the "
+                "experimenter now.\n"
+                "\n"
+                "<i>Hit Enter when ready to proceed.</i>", 
+//                "<i>Hit any button on the button-box when ready to "
+//                "proceed.</i>", 
+                true);
+
+            pause_page.action(this);
+            control.button_box.enable_all_buttons(CONTINUE);
+        }
+    }
+
+
+    Block test
+    {
+        TestItem        item;   // current item
+        TestOutput      output; // current output table row
+
+
+        on_event:entry()
+        {
+            // Randomize test items table.
+            if (shuffle_test_items(selected_group) != OK) terminate;
+
+            num_cycles = test_items[selected_group].size;
+//            num_cycles = 3;
+
+            // Prepare test page: progress bar enabled, prompt disabled.
+            test_page.setup(num_cycles, false);
+        }
+
+
+        on_event:exit()
+        {
+            test_page.cleanup();
+
+            // Save test output table as CSV file.
+            test_output_save();
+        }
+
+
+        Trial trial
+        {
+            on_event:entry()
+            {
+                item = test_items[selected_group][test.cycle];
+
+                output.trialnum = test.cycle + 1;
+                output.id = item.id;
+                output.type = item.type;
+                output.question_a = substring(item.question_a, 0, 30);
+                output.qa_correct = -1;
+                output.question_b = substring(item.question_b, 0, 30);
+                output.qb_correct = -1;
+                output.question_c = substring(item.question_c, 0, 30);
+                output.qc_correct = -1;
+                output.question_d = substring(item.question_d, 0, 30);
+                output.qd_correct = -1;
+
+                // Make sure the button events are handled on the test page.
+                control.target = test_page;
+            }
+
+
+/*             on_event:exit()
+            {
+                // Add new row to test output table.
+                test_output_append(output);
+            } */
+
+
+            SubTrial presentation
+            {
+                on_event:entry()
+                {
+                    test_page.action(this, item, reference_time, test.cycle);
+                }
+            }
+
+
+/*                 on_event:exit()
+                {
+                    output.rt1 = test_page.response.rt[1];
+                    output.rt2 = test_page.response.rt[2];
+                    output.rt3 = test_page.response.rt[3];
+                    output.rt4 = test_page.response.rt[4];
+                    output.rt5 = test_page.response.rt[5];
+                    output.rt6 = test_page.response.rt[6];
+                    output.rt7 = test_page.response.rt[7];
+                    output.rt8 = test_page.response.rt[8];
+                    output.rt9 = test_page.response.rt[9];
+                    output.rt10 = test_page.response.rt[10];
+                    output.rt11 = test_page.response.rt[11];
+                    output.rt12 = test_page.response.rt[12];
+                    output.rt13 = test_page.response.rt[13];
+                    output.rt14 = test_page.response.rt[14];
+                    output.rt15 = test_page.response.rt[15];
+                    output.rt16 = test_page.response.rt[16];
+                    output.rt17 = test_page.response.rt[17];
+                    output.rt18 = test_page.response.rt[18];
+                    output.rt19 = test_page.response.rt[19];
+                    output.rt20 = test_page.response.rt[20];
+                }
+            }
+ */
+
+            TransientPart
+            {
+                on_event:entry()
+                {
+                    // Check if we need to ask a comprehension question.
+                    if (random(100) >= STATEMENT_CHANCE || 
+                            length(item.question_a) == 0)
+                        trial.leave();  // No question. Trial done.
+                }
+            }
+
+
+            SubTrial questiona
+            {
+                on_event:entry()
+                {
+                    control.target = choose_1of2_page;
+                    choose_1of2_page.set_text(item.question_a);
+                    choose_1of2_page.set_label_texts(" Yes ", " No ");
+                    choose_1of2_page.set_answer_values(1, 0);
+                    // Or choose the other way around with false and true
+//                    choose_1of2_page.set_label_texts("False", "True");
+//                    choose_1of2_page.set_answer_values(0, 1);
+                    choose_1of2_page.set_keys(KEY_Shift_L, KEY_Shift_R);
+                    choose_1of2_page.action(this, item.qans_a);
+                    // inform the control that choose_1of2_page must
+                    // get an event.
+                    
+                }
+            }
+            SubTrial questionb
+            {
+                on_event:entry()
+                {
+                    control.target = choose_1of2_page;
+                    choose_1of2_page.set_text(item.question_b);
+                    choose_1of2_page.set_label_texts(" Yes ", " No ");
+                    choose_1of2_page.set_answer_values(1, 0);
+                    // Or choose the other way around with false and true
+//                    choose_1of2_page.set_label_texts("False", "True");
+//                    choose_1of2_page.set_answer_values(0, 1);
+                    choose_1of2_page.set_keys(KEY_Shift_L, KEY_Shift_R);
+                    choose_1of2_page.action(this, item.qans_b);
+                    
+                }
+            }
+            SubTrial questionc
+            {
+                on_event:entry()
+                {
+                    control.target = choose_1of2_page;
+                    choose_1of2_page.set_text(item.question_c);
+                    choose_1of2_page.set_label_texts(" Yes ", " No ");
+                    choose_1of2_page.set_answer_values(1, 0);
+                    // Or choose the other way around with false and true
+//                    choose_1of2_page.set_label_texts("False", "True");
+//                    choose_1of2_page.set_answer_values(0, 1);
+                    choose_1of2_page.set_keys(KEY_Shift_L, KEY_Shift_R);
+                    choose_1of2_page.action(this, item.qans_c);
+                    
+                }
+            }
+            SubTrial questiond
+            {
+                on_event:entry()
+                {
+                    control.target = choose_1of2_page;
+                    choose_1of2_page.set_text(item.question_d);
+                    choose_1of2_page.set_label_texts(" Yes ", " No ");
+                    choose_1of2_page.set_answer_values(1, 0);
+                    // Or choose the other way around with false and true
+//                    choose_1of2_page.set_label_texts("False", "True");
+//                    choose_1of2_page.set_answer_values(0, 1);
+                    choose_1of2_page.set_keys(KEY_Shift_L, KEY_Shift_R);
+                    choose_1of2_page.action(this, item.qans_d);
+                }
+            }
+
+
+            on_event:exit()
+                {
+                    output.qa_correct  = choose_1of2_page.response.correct;
+                    output.qans_a      = choose_1of2_page.response.answer;
+                    output.qb_correct  = choose_1of2_page.response.correct;
+                    output.qans_b      = choose_1of2_page.response.answer;
+                    output.qc_correct  = choose_1of2_page.response.correct;
+                    output.qans_c      = choose_1of2_page.response.answer;
+                    output.qd_correct  = choose_1of2_page.response.correct;
+                    output.qans_d      = choose_1of2_page.response.answer;
+
+                    output.rt1 = test_page.response.rt[1];
+                    output.rt2 = test_page.response.rt[2];
+                    output.rt3 = test_page.response.rt[3];
+                    output.rt4 = test_page.response.rt[4];
+                    output.rt5 = test_page.response.rt[5];
+                    output.rt6 = test_page.response.rt[6];
+                    output.rt7 = test_page.response.rt[7];
+                    output.rt8 = test_page.response.rt[8];
+                    output.rt9 = test_page.response.rt[9];
+                    output.rt10 = test_page.response.rt[10];
+                    output.rt11 = test_page.response.rt[11];
+                    output.rt12 = test_page.response.rt[12];
+                    output.rt13 = test_page.response.rt[13];
+                    output.rt14 = test_page.response.rt[14];
+                    output.rt15 = test_page.response.rt[15];
+                    output.rt16 = test_page.response.rt[16];
+                    output.rt17 = test_page.response.rt[17];
+                    output.rt18 = test_page.response.rt[18];
+                    output.rt19 = test_page.response.rt[19];
+                    output.rt20 = test_page.response.rt[20];
+
+                    test_output_append(output);
+                }
+            }
+        }
+
+        Part
+        {
+             on_event:entry()
+            {
+                blank_page.action_auto(this, 500ms);
+            }
+	    }
+    }
+
+
+
+
+void action(Part caller)
+{
+    // Activate the task. When the task is done, the registered caller
+    // (c.q. the main experiment object) will automatically be signalled.
+    task.enter(caller);
+}

@@ -1,0 +1,90 @@
+/******************************************************************************\
+FILE:           output.zm
+AUTHOR:         Theo Veenker <theo.veenker@beexy.nl>
+ADAPTED BY:     -
+
+DESCRIPTION:
+
+Defines the formats of output table(s).
+
+
+HISTORY:
+2012-03-19 TV   Created.
+2019-02-10 IM Adapted to record 15 segments rather than 10.
+
+
+\******************************************************************************/
+
+
+// Test output table record.
+record TestOutput
+{
+    int         trialnum;       // trial number
+
+    int         id;             // item id
+    ItemType    type;           // item type
+    
+    string      question_a;     // true/false statement about stimulus (partial)
+    int         qans_a;         // the answer the participant gave
+    int         qa_correct;
+    
+    string      question_b;
+    int         qans_b;
+    int         qb_correct;
+    
+    string      question_c;
+    int         qans_c;
+    int         qc_correct;
+    
+    string      question_d;
+    int         qans_d;
+    int         qd_correct;
+    // correct answer to quest: 0=no, 1=yes, -1=n.a.
+
+    int         rt1;            // reading time for starred segment 1 [ms]
+    int         rt2;            // reading time for starred segment 2 [ms]
+    int         rt3;            // reading time for starred segment 3 [ms]
+    int         rt4;            // reading time for starred segment 4 [ms]
+    int         rt5;            // reading time for starred segment 5 [ms]
+    int         rt6;            // reading time for starred segment 6 [ms]
+    int         rt7;            // reading time for starred segment 7 [ms]
+    int         rt8;            // reading time for starred segment 8 [ms]
+    int         rt9;            // reading time for starred segment 9 [ms]
+    int         rt10;           // reading time for starred segment 10 [ms]
+    int         rt11;           // reading time for starred segment 11 [ms]
+    int         rt12;           // reading time for starred segment 12 [ms]
+    int         rt13;           // reading time for starred segment 13 [ms]
+    int         rt14;           // reading time for starred segment 14 [ms]
+    int         rt15;           // reading time for starred segment 15 [ms]
+    int         rt16;
+    int         rt17;
+    int         rt18;
+    int         rt19;
+    int         rt20;
+}
+
+
+// Test output table.
+TestOutput[..] test_output;
+
+
+//------------------------------------------------------------------------------
+
+
+// Appends one row of data to test output table.
+void test_output_append(TestOutput data)
+{
+    test_output.size = test_output.size + 1;
+    test_output[test_output.size-1] = data;
+}
+
+
+// Writes test output table contents to CSV file and clears the table.
+void test_output_save()
+{
+    // Append table to CSV file (create if non-existent). The filename format
+    // is: <dbname>/<dbnum>/<expname>/<phasename>/ses<sesid>-<tblnum>.csv
+    string fn = expdb.experiment.session.create_table(namespace_name, 1);
+    test_output.append(fn, namespace_name + ": test results");
+    test_output.size = 0;
+}

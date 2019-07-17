@@ -1,0 +1,60 @@
+### Test items ###;;;;;;;;;;;
+index;id;type;segments;question_a;qans_a;question_b;qans_b;question_c;qans_c;question_d;qans_d
+0;1;CAUSAL;"van Dijk and Kintsch (1983) claim that discourse comprehension involves three levels of representation./
+Among them, the situation model is the most important./It refers to the people, states, events, and 
+actions of the mental microworld described in the text./ Situation models have been difficult to
+investigate accurately for several reasons./
+
+First, world knowledge plays a central role in building situation models, yet world knowledge is
+imprecise, open-ended, vague, and minimally visible to the investigator./Second, situation models are
+unique representations that embody the idiosyncratic constraints of the particular text./ It is 
+difficult to identify general mechanisms when the representations are so idiosyncratic./ Third, there is
+no sophisticated theory that both specifies how situation models are constructed and also is
+psychologically plausible./ All this has imposed important challenges for researchers./
+
+Cognitive psychologists still continue making efforts in finding the most suitable way to investigate 
+the quality of the situation model constructed by readers";Cognitive psychologists are still looking for the best way to study the quality of the situation model.;1;Discourse comprehension, according to van Dijk and Kintsch, involves the construction of one level of representation: the situation model. ;0;According to some cognitive psychologists, previous knowledge plays a minor role in the process of discourse comprehension. ;1;Hey hey, my my. Your technician is never gonna die.;0
+1;1;NCAUSAL;"Generativism, the trend founded by the linguist Noam Chomsky, offered an explicit, formal
+and rigorous model of language./Generativists focused on the study of syntax, leaving aside aspects 
+that some scholars considered indispensable for the study of language, such as semantic, cultural, 
+historical, psychological or stylistic factors./The exclusion of the semantic component from linguistic
+analysis had consequences for the research scenario./
+
+In the mid-1960s, a group of important scholars started to claim that any approach to language that 
+leaves aside aspects related to meaning is extremely unnatural and incomplete./They argued that since
+language is essentially a means of communication, the complete exclusion of meaning implied that a 
+crucial component for human communication had been ignored./In light of this criticism, new ways of 
+conducting linguistic research emerged./
+
+Some leading scholars such as Lakoff, Fillmore or Langacker started new lines of research, in which
+meaning was a central component.";Is this non-causal question A?;1;Is this question B, but in the non-causal version?;0;Is this question C?;0;Hey hey, my my. Your technician is never gonna die.;0
+1;2;CAUSAL;"Van Dijk y Kintsch (1983) plantean que la comprensión del discurso involucra tres niveles de representación./
+De ellos, el más importante es el modelo de situación./Hace alusión a las personas, estados, sucesos y
+acciones del micromundo mental descrito en el texto./Por diversas razones, los modelos de situación han
+sido difíciles de investigar con precisión./
+
+Primero, el conocimiento del mundo tiene un papel central en la construcción de los modelos de situación;
+/sin embargo, el conocimiento del mundo es impreciso, vago y mínimamente visible para el investigador./
+Segundo, los modelos de situación son representaciones únicas que incorporan las restricciones 
+idiosincrásicas del texto particular. Es difícil identificar mecanismos generales cuando las 
+representaciones son tan idiosincrásicas./ Tercero, aun no existe ninguna teoría sofisticada y 
+psicológicamente plausible que especifique cómo se construyen estos modelos./Todo esto ha impuesto
+importantes desafíos a los investigadores./
+
+Los psicólogos cognitivos aún continúan esforzándose para encontrar la manera más adecuada de 
+investigar la calidad del modelo de situación que construyen los lectores.";Is this non-causal question A?;1;B?;1;C?;0;D?;1
+0;2;NCAUSAL;"Generativism, the trend founded by the linguist Noam Chomsky, offered an explicit, formal and 
+rigorous model of language./Generativists focused on the study of syntax, leaving aside aspects that some 
+scholars considered indispensable for the study of language, such as semantic, cultural, historical, 
+psychological or stylistic factors./The exclusion of the semantic component from linguistic analysis 
+had consequences for the research scenario./
+
+In the mid-1960s, a group of important scholars started to claim that any approach to language that 
+leaves aside aspects related to meaning is extremely unnatural and incomplete./They argued that since 
+language is essentially a means of communication, the complete exclusion of meaning implied that a crucial
+component for human communication had been ignored./In light of this criticism, new ways of conducting 
+linguistic research emerged./
+
+Some leading scholars such as Lakoff, Fillmore or Langacker started new lines of research, in which 
+meaning was a central component.
+";Is this non-causal question A?;1;B?;1;C?;0;Hey hey, my my. Your technician is never gonna die.;0
