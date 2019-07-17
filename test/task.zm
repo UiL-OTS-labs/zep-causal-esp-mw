@@ -56,27 +56,25 @@ Block task
         {
 //            pause_page.set_text_size(1000, 600);
             pause_page.set_text(
-                "<b>Dear participant,</b>\n"
+                "<b>Bienvenido(a)</b>,\n"
                 "\n"
-                "Thank you for participating in this experiment.\n"
+                "Gracias por participar en esta actividad.\n"       
+                "A continuación te presentaremos varios textos sobre\n"
+                "diferentes temáticas de tu carrera. Los textos serán\n"
+                "presentados oración por oración. Solo cuando hayas\n"
+                "terminado de leer una oración, presiona la BARRA\n" 
+                "ESPACIADORA para que aparezca la siguiente.\n"
+                "\n" 
+                "Es importante que leas los textos a una velocidad normal,\n"
+                "pero asegúrate de comprenderlos, ya que después de cada\n"
+                "texto te presentaremos algunas oraciones. Tu tarea será\n"
+                "determinar si esas oraciones son Verdaderas o Falsas. Para\n"
+                "responder, debes presionar la tecla verde  (Verdadero) o \n"
+                "rojo (Falso) del teclado.\n"
+                "\n"         
+                "Antes de comenzar, haremos una breve práctica.\n"
                 "\n"
-                "You are now going to see sentences on the screen, one after "
-                "the other. Each sentence is broken up into words. You can "
-                "reveal the sentence word-by-word by repeatedly hitting "
-                "the spacebar. "
-//                "the button in front of you. "
-                "This way you walk through each sentence. Your task is to "
-                "<i>silently</i> read each sentence as quickly as possible.\n"
-                "\n"
-                "Sometimes a statement about a sentence comes up. You then "
-                "have to indicate whether the statement is correct or not. "
-                "Therefore it is important that you really <i>read</i> each "
-                "sentence.\n"
-                "\n"
-                "First we will do a short practice.\n"
-                "\n"
-                "<i>Hit Enter when ready to start.</i>", 
-//                "<i>Hit any button on the button-box when ready to start.</i>", 
+                "<i>Presiona la BARRA ESPACIADORA para iniciar la práctica.</i>\n", 
                 true);
 
             pause_page.action(this);
@@ -139,7 +137,7 @@ Block task
                 {
                     control.target = choose_1of2_page;
                     choose_1of2_page.set_text(item.question_a);
-                    choose_1of2_page.set_label_texts(" Yes ", " No ");
+                    choose_1of2_page.set_label_texts(" Verdadera ", " Falso ");
                     choose_1of2_page.set_answer_values(1, 0);
                     // Or choose the other way around with false and true
 //                    choose_1of2_page.set_label_texts("False", "True");
@@ -157,7 +155,7 @@ Block task
                 {
                     control.target = choose_1of2_page;
                     choose_1of2_page.set_text(item.question_b);
-                    choose_1of2_page.set_label_texts(" Yes ", " No ");
+                    choose_1of2_page.set_label_texts(" Verdadera ", " Falso ");
                     choose_1of2_page.set_answer_values(1, 0);
                     // Or choose the other way around with false and true
 //                    choose_1of2_page.set_label_texts("False", "True");
@@ -173,7 +171,7 @@ Block task
                 {
                     control.target = choose_1of2_page;
                     choose_1of2_page.set_text(item.question_c);
-                    choose_1of2_page.set_label_texts(" Yes ", " No ");
+                    choose_1of2_page.set_label_texts(" Verdadera ", " Falso ");
                     choose_1of2_page.set_answer_values(1, 0);
                     // Or choose the other way around with false and true
 //                    choose_1of2_page.set_label_texts("False", "True");
@@ -189,7 +187,7 @@ Block task
                 {
                     control.target = choose_1of2_page;
                     choose_1of2_page.set_text(item.question_d);
-                    choose_1of2_page.set_label_texts(" Yes ", " No ");
+                    choose_1of2_page.set_label_texts(" Verdadera ", " Falso ");
                     choose_1of2_page.set_answer_values(1, 0);
                     // Or choose the other way around with false and true
 //                    choose_1of2_page.set_label_texts("False", "True");
@@ -216,14 +214,11 @@ Block task
         on_event:entry()
         {
             pause_page.set_text(
-                "End of the practice part.\n"
+                "Hemos terminado la actividad de práctica.\n"
                 "\n"
-                "If you have any questions at this moment please ask the "
-                "experimenter now.\n"
+                "Si tienes alguna duda, por favor pregunta ahora a la persona encargada.\n"
                 "\n"
-                "<i>Hit Enter when ready to proceed.</i>", 
-//                "<i>Hit any button on the button-box when ready to "
-//                "proceed.</i>", 
+                "<i>Presiona la BARRA ESPACIADORA cuando estés preparado(a) para comenzar el experimento</i>", 
                 true);
 
             pause_page.action(this);
@@ -299,32 +294,6 @@ Block task
             }
 
 
-/*                 on_event:exit()
-                {
-                    output.rt1 = test_page.response.rt[1];
-                    output.rt2 = test_page.response.rt[2];
-                    output.rt3 = test_page.response.rt[3];
-                    output.rt4 = test_page.response.rt[4];
-                    output.rt5 = test_page.response.rt[5];
-                    output.rt6 = test_page.response.rt[6];
-                    output.rt7 = test_page.response.rt[7];
-                    output.rt8 = test_page.response.rt[8];
-                    output.rt9 = test_page.response.rt[9];
-                    output.rt10 = test_page.response.rt[10];
-                    output.rt11 = test_page.response.rt[11];
-                    output.rt12 = test_page.response.rt[12];
-                    output.rt13 = test_page.response.rt[13];
-                    output.rt14 = test_page.response.rt[14];
-                    output.rt15 = test_page.response.rt[15];
-                    output.rt16 = test_page.response.rt[16];
-                    output.rt17 = test_page.response.rt[17];
-                    output.rt18 = test_page.response.rt[18];
-                    output.rt19 = test_page.response.rt[19];
-                    output.rt20 = test_page.response.rt[20];
-                }
-            }
- */
-
             TransientPart
             {
                 on_event:entry()
@@ -343,7 +312,7 @@ Block task
                 {
                     control.target = choose_1of2_page;
                     choose_1of2_page.set_text(item.question_a);
-                    choose_1of2_page.set_label_texts(" Yes ", " No ");
+                    choose_1of2_page.set_label_texts(" Verdadera ", " Falso ");
                     choose_1of2_page.set_answer_values(1, 0);
                     // Or choose the other way around with false and true
 //                    choose_1of2_page.set_label_texts("False", "True");
@@ -361,7 +330,7 @@ Block task
                 {
                     control.target = choose_1of2_page;
                     choose_1of2_page.set_text(item.question_b);
-                    choose_1of2_page.set_label_texts(" Yes ", " No ");
+                    choose_1of2_page.set_label_texts(" Verdadera ", " Falso ");
                     choose_1of2_page.set_answer_values(1, 0);
                     // Or choose the other way around with false and true
 //                    choose_1of2_page.set_label_texts("False", "True");
@@ -377,7 +346,7 @@ Block task
                 {
                     control.target = choose_1of2_page;
                     choose_1of2_page.set_text(item.question_c);
-                    choose_1of2_page.set_label_texts(" Yes ", " No ");
+                    choose_1of2_page.set_label_texts(" Verdadera ", " Falso ");
                     choose_1of2_page.set_answer_values(1, 0);
                     // Or choose the other way around with false and true
 //                    choose_1of2_page.set_label_texts("False", "True");
@@ -393,7 +362,7 @@ Block task
                 {
                     control.target = choose_1of2_page;
                     choose_1of2_page.set_text(item.question_d);
-                    choose_1of2_page.set_label_texts(" Yes ", " No ");
+                    choose_1of2_page.set_label_texts(" Verderada ", " Falso ");
                     choose_1of2_page.set_answer_values(1, 0);
                     // Or choose the other way around with false and true
 //                    choose_1of2_page.set_label_texts("False", "True");

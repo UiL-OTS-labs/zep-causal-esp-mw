@@ -62,7 +62,7 @@ Page test_page
             init()
             {
                 fill_pattern_color = TEST_PAGE_STIMULUS_COLOR;
-                size = 1400, 1000;
+                size = 1400, 960;
                 offset_x = 40;
                 offset_y = 40;
             }
@@ -215,7 +215,7 @@ Page test_page
         // This creates a string in which words are underlined in black/gray
         // and the words themselves are in specified color.
         string underline_words(string s, int from, int to, 
-            color wordcolor, color linecolor=rgb:606060)
+            color wordcolor, color linecolor=rgbi:0/0/0/0)
         {
             string out;
             bool underlined;
@@ -255,7 +255,7 @@ Page test_page
                             format_hex(linecolor) + "\" " +
                             "color=\"#" + 
                             format_hex(wordcolor) + "\">";
-                        underlined = true;
+                        underlined = true;//true;
                     }
                     out += ch;
                 }

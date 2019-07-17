@@ -23,16 +23,6 @@ void create_participant_fields()
 
 
 // Checks current values of participant record fields.
-/* int check_participant_fields()
-{
-	if (	!expdb.participant.has_enum_field("expertise")) return ERROR;
-	if (	expdb.participant.get_int_field("list_zero_one") != 0 
-		&& 	expdb.participant.get_int_field("list_zero_one") != 1) return ERROR;
-		
-    return OK;
-} */
-
-// Checks current values of participant record fields.
 int check_participant_fields()
 {
     // check whether we have a enum expertise
@@ -52,7 +42,7 @@ int check_participant_fields()
 
     if (!expdb.participant.has_enum_field("list_one_two"))
     {
-        print_error("List zero or one is not set (one|two)\n");
+        print_error("List one or two is not set (one|two)\n");
         return ERROR;
     }
  
@@ -60,7 +50,7 @@ int check_participant_fields()
     if (expdb.participant.get_enum_field("list_one_two") != "one" &&
         expdb.participant.get_enum_field("list_one_two") != "two")
     {
-        print_error("List is not filled out correctly\n");
+        print_error("List is not filled out correctly (type 'one' or 'two')\n");
         return ERROR;
     }
 

@@ -42,7 +42,7 @@ record TestItem
     string      question_c;     // 
     int         qans_c;         // 
     string      question_d;     //
-    int         qans_d;        //answer
+    int         qans_d;         //answer
 }
 
 //question_a;qans_a;question_b;qans_b;question_c;qans_c;question_d;qans_d
