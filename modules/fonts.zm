@@ -20,7 +20,7 @@ HISTORY:
 
 
 // Some generic font sizes. The relative sizes correspond to those in CSS 2.1.
-const real FONT_SIZE_MEDIUM     = 24;
+const real FONT_SIZE_MEDIUM     = 22;
 const real FONT_SIZE_LARGE      = FONT_SIZE_MEDIUM * 1.2;
 const real FONT_SIZE_XLARGE     = FONT_SIZE_MEDIUM * 1.5;
 const real FONT_SIZE_XXLARGE    = FONT_SIZE_MEDIUM * 2.0;
@@ -38,7 +38,7 @@ const string FONT_FAMILY_MONO   = "Monospace";
 
 // Fonts used on test pages.
 const string    TEST_PAGE_STIMULUS_FONT_FAMILY  = FONT_FAMILY_MONO;
-const real      TEST_PAGE_STIMULUS_FONT_SIZE    = FONT_SIZE_LARGE;
+const real      TEST_PAGE_STIMULUS_FONT_SIZE    = FONT_SIZE_MEDIUM;
 const string    TEST_PAGE_MESSAGE_FONT_FAMILY   = FONT_FAMILY_SANS;
 const real      TEST_PAGE_MESSAGE_FONT_SIZE     = FONT_SIZE_MEDIUM;
 const string    TEST_PAGE_PROMPT_FONT_FAMILY    = FONT_FAMILY_SANS;
