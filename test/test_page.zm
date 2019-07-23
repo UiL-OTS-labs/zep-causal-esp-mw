@@ -214,6 +214,34 @@ Page test_page
 
         // This creates a string in which words are underlined in black/gray
         // and the words themselves are in specified color.
+        // string underline_words(string s, int from, int to,
+        //     color wordcolor, color linecolor=rgb:606060)
+        // {
+        //     string out;
+        //     int n = from;
+        //     if (n < to && character(s, n) == '#')
+        //         n++;
+        //     while (n < to)
+        //     {
+        //         char ch = character(s, n);
+        //         if (ch <= ' ')
+        //         {
+        //             out += ch;
+        //         }
+        //         else if (ch == '/')
+        //         {
+        //             out += ' ';
+        //             if (n+1 < to && character(s, n+1) == '#')
+        //                 n++;
+        //         }
+        //         else
+        //         {
+        //             out += ch;
+        //         }
+        //         n++;
+        //     }
+        //     return out;
+        // }
         string underline_words(string s, int from, int to, 
             color wordcolor, color linecolor=rgbi:0/0/0/0)
         {
@@ -250,10 +278,7 @@ Page test_page
                     if (!underlined)
                     {
 //                        out += "<span underline=\"error\" "
-                        out += "<span underline=\"single\" "
-                            "underline_color=\"#" + 
-                            format_hex(linecolor) + "\" " +
-                            "color=\"#" + 
+                        out += "<span color=\"#" + 
                             format_hex(wordcolor) + "\">";
                         underlined = true;//true;
                     }
