@@ -24,8 +24,8 @@ HISTORY:
 enum ItemType
 {
     FILLER,                     // filler
-    CAUSAL,                      // correct sentence
-    NCAUSAL,                       // sentence has grammatical error                       // practice items
+    CAUSAL,                     // correct sentence
+    NCAUSAL,                    // sentence has grammatical error                       // practice items
 }
 
 
@@ -42,16 +42,10 @@ record TestItem
     string      question_c;     // 
     int         qans_c;         // 
     string      question_d;     //
-    int         qans_d;         //answer
+    int         qans_d;         
 }
 
-//question_a;qans_a;question_b;qans_b;question_c;qans_c;question_d;qans_d
 
-
-// Practice item table.
-//   index: item number
-// Practice item table.
-//   index: item number
 TestItem[..] prac_items;
 
 

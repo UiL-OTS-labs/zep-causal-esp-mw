@@ -17,7 +17,7 @@ HISTORY:
 
 
 // Duration of the interval between two trials.
-const dur       INTERTRIAL_INTERVAL             = 1000ms;
+const dur       INTERTRIAL_INTERVAL             = 0ms;
 
 // Maximum number of starred segments in a sentence. Only reading time of
 // starred segments are recorded. When changing this value also change the 

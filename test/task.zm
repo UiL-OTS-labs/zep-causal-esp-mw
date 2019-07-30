@@ -54,7 +54,6 @@ Block task
     {
         on_event:entry()
         {
-//            pause_page.set_text_size(1000, 600);
             pause_page.set_text(
                 "<b>Bienvenido(a)</b>,\n"
                 "\n"
@@ -93,7 +92,7 @@ Block task
             num_cycles = prac_items.size;
 
             // Prepare test page: progress bar and prompt enabled.
-            test_page.setup(num_cycles, true);
+            test_page.setup(num_cycles, false);
         }
 
 
@@ -116,20 +115,24 @@ Block task
             {
                 on_event:entry()
                 {
-                    test_page.action(this, item, reference_time, practice.cycle);
+                    test_page.action(this, item, reference_time, 
+                                    practice.cycle);
                 }
             }
 
-
-            TransientPart
+            Part question_instructions
             {
                 on_event:entry()
                 {
-                    // Check if we need to ask a comprehension question.
-                    if (length(item.question_a) == 0)
-                        trial.leave();  // No question. Trial done.
+                    pause_page.set_text(
+                        "Según el texto que acabas de leer, determina si la\n"
+                        "siguiente oración es Verdadera o Falsa.\n", true);
+
+                    pause_page.action(this);
+                    //control.button_box.enable_all_buttons(CONTINUE);
                 }
             }
+
 
             SubTrial questiona
             {
@@ -139,9 +142,7 @@ Block task
                     choose_1of2_page.set_text(item.question_a);
                     choose_1of2_page.set_label_texts(" Verdadera ", " Falso ");
                     choose_1of2_page.set_answer_values(1, 0);
-                    // Or choose the other way around with false and true
-//                    choose_1of2_page.set_label_texts("False", "True");
-//                    choose_1of2_page.set_answer_values(0, 1);
+
                     choose_1of2_page.set_keys(KEY_Shift_L, KEY_Shift_R);
                     choose_1of2_page.action(this, item.qans_a);
                     // inform the control that choose_1of2_page must
@@ -157,9 +158,7 @@ Block task
                     choose_1of2_page.set_text(item.question_b);
                     choose_1of2_page.set_label_texts(" Verdadera ", " Falso ");
                     choose_1of2_page.set_answer_values(1, 0);
-                    // Or choose the other way around with false and true
-//                    choose_1of2_page.set_label_texts("False", "True");
-//                    choose_1of2_page.set_answer_values(0, 1);
+
                     choose_1of2_page.set_keys(KEY_Shift_L, KEY_Shift_R);
                     choose_1of2_page.action(this, item.qans_b);
                     
@@ -173,9 +172,7 @@ Block task
                     choose_1of2_page.set_text(item.question_c);
                     choose_1of2_page.set_label_texts(" Verdadera ", " Falso ");
                     choose_1of2_page.set_answer_values(1, 0);
-                    // Or choose the other way around with false and true
-//                    choose_1of2_page.set_label_texts("False", "True");
-//                    choose_1of2_page.set_answer_values(0, 1);
+
                     choose_1of2_page.set_keys(KEY_Shift_L, KEY_Shift_R);
                     choose_1of2_page.action(this, item.qans_c);
                     
@@ -189,9 +186,7 @@ Block task
                     choose_1of2_page.set_text(item.question_d);
                     choose_1of2_page.set_label_texts(" Verdadera ", " Falso ");
                     choose_1of2_page.set_answer_values(1, 0);
-                    // Or choose the other way around with false and true
-//                    choose_1of2_page.set_label_texts("False", "True");
-//                    choose_1of2_page.set_answer_values(0, 1);
+
                     choose_1of2_page.set_keys(KEY_Shift_L, KEY_Shift_R);
                     choose_1of2_page.action(this, item.qans_d);
                 }
@@ -214,12 +209,12 @@ Block task
         on_event:entry()
         {
             pause_page.set_text(
-                "Hemos terminado la actividad de práctica.\n"
-                "\n"
-                "Si tienes alguna duda, por favor pregunta ahora a la persona encargada.\n"
-                "\n"
-                "<i>Presiona la BARRA ESPACIADORA cuando estés preparado(a) para comenzar el experimento</i>", 
-                true);
+    "Hemos terminado la actividad de práctica.\n"
+    "\n"
+    "Si tienes alguna duda, por favor pregunta ahora a la persona encargada.\n"
+    "\n"
+    "<i>Presiona la BARRA ESPACIADORA cuando estés preparado(a) para comenzar el experimento</i>", 
+    true);
 
             pause_page.action(this);
             control.button_box.enable_all_buttons(CONTINUE);
@@ -239,7 +234,6 @@ Block task
             if (shuffle_test_items(selected_group) != OK) terminate;
 
             num_cycles = test_items[selected_group].size;
-//            num_cycles = 3;
 
             // Prepare test page: progress bar enabled, prompt disabled.
             test_page.setup(num_cycles, false);
@@ -264,25 +258,16 @@ Block task
                 output.trialnum = test.cycle + 1;
                 output.id = item.id;
                 output.type = item.type;
-                output.question_a = substring(item.question_a, 0, 30);
-                output.qa_correct = -1;
-                output.question_b = substring(item.question_b, 0, 30);
-                output.qb_correct = -1;
-                output.question_c = substring(item.question_c, 0, 30);
-                output.qc_correct = -1;
-                output.question_d = substring(item.question_d, 0, 30);
-                output.qd_correct = -1;
 
-                // Make sure the button events are handled on the test page.
                 control.target = test_page;
             }
 
 
-/*             on_event:exit()
+            on_event:exit()
             {
                 // Add new row to test output table.
                 test_output_append(output);
-            } */
+            } 
 
 
             SubTrial presentation
@@ -291,99 +276,10 @@ Block task
                 {
                     test_page.action(this, item, reference_time, test.cycle);
                 }
-            }
 
-
-            TransientPart
-            {
-                on_event:entry()
+                //maybe the sub data saves must also be done here
+                on_event:exit()
                 {
-                    // Check if we need to ask a comprehension question.
-                    if (random(100) >= STATEMENT_CHANCE || 
-                            length(item.question_a) == 0)
-                        trial.leave();  // No question. Trial done.
-                }
-            }
-
-
-            SubTrial questiona
-            {
-                on_event:entry()
-                {
-                    control.target = choose_1of2_page;
-                    choose_1of2_page.set_text(item.question_a);
-                    choose_1of2_page.set_label_texts(" Verdadera ", " Falso ");
-                    choose_1of2_page.set_answer_values(1, 0);
-                    // Or choose the other way around with false and true
-//                    choose_1of2_page.set_label_texts("False", "True");
-//                    choose_1of2_page.set_answer_values(0, 1);
-                    choose_1of2_page.set_keys(KEY_Shift_L, KEY_Shift_R);
-                    choose_1of2_page.action(this, item.qans_a);
-                    // inform the control that choose_1of2_page must
-                    // get an event.
-                    
-                }
-            }
-            SubTrial questionb
-            {
-                on_event:entry()
-                {
-                    control.target = choose_1of2_page;
-                    choose_1of2_page.set_text(item.question_b);
-                    choose_1of2_page.set_label_texts(" Verdadera ", " Falso ");
-                    choose_1of2_page.set_answer_values(1, 0);
-                    // Or choose the other way around with false and true
-//                    choose_1of2_page.set_label_texts("False", "True");
-//                    choose_1of2_page.set_answer_values(0, 1);
-                    choose_1of2_page.set_keys(KEY_Shift_L, KEY_Shift_R);
-                    choose_1of2_page.action(this, item.qans_b);
-                    
-                }
-            }
-            SubTrial questionc
-            {
-                on_event:entry()
-                {
-                    control.target = choose_1of2_page;
-                    choose_1of2_page.set_text(item.question_c);
-                    choose_1of2_page.set_label_texts(" Verdadera ", " Falso ");
-                    choose_1of2_page.set_answer_values(1, 0);
-                    // Or choose the other way around with false and true
-//                    choose_1of2_page.set_label_texts("False", "True");
-//                    choose_1of2_page.set_answer_values(0, 1);
-                    choose_1of2_page.set_keys(KEY_Shift_L, KEY_Shift_R);
-                    choose_1of2_page.action(this, item.qans_c);
-                    
-                }
-            }
-            SubTrial questiond
-            {
-                on_event:entry()
-                {
-                    control.target = choose_1of2_page;
-                    choose_1of2_page.set_text(item.question_d);
-                    choose_1of2_page.set_label_texts(" Verderada ", " Falso ");
-                    choose_1of2_page.set_answer_values(1, 0);
-                    // Or choose the other way around with false and true
-//                    choose_1of2_page.set_label_texts("False", "True");
-//                    choose_1of2_page.set_answer_values(0, 1);
-                    choose_1of2_page.set_keys(KEY_Shift_L, KEY_Shift_R);
-                    choose_1of2_page.action(this, item.qans_d);
-                }
-            }
-
-
-            on_event:exit()
-                {
-                    output.qa_correct  = choose_1of2_page.response.correct;
-                    output.qans_a      = choose_1of2_page.response.answer;
-                    output.qb_correct  = choose_1of2_page.response.correct;
-                    output.qans_b      = choose_1of2_page.response.answer;
-                    output.qc_correct  = choose_1of2_page.response.correct;
-                    output.qans_c      = choose_1of2_page.response.answer;
-                    output.qd_correct  = choose_1of2_page.response.correct;
-                    output.qans_d      = choose_1of2_page.response.answer;
-
                     output.rt1 = test_page.response.rt[1];
                     output.rt2 = test_page.response.rt[2];
                     output.rt3 = test_page.response.rt[3];
@@ -404,8 +300,105 @@ Block task
                     output.rt18 = test_page.response.rt[18];
                     output.rt19 = test_page.response.rt[19];
                     output.rt20 = test_page.response.rt[20];
+                }
+            }
 
-                    test_output_append(output);
+
+            SubTrial questiona
+            {
+                on_event:entry()
+                {
+                    control.target = choose_1of2_page;
+                    choose_1of2_page.set_text(item.question_a);
+                    choose_1of2_page.set_label_texts(" Verdadera ", " Falso ");
+                    choose_1of2_page.set_answer_values(1, 0);
+                    choose_1of2_page.set_keys(KEY_Shift_L, KEY_Shift_R);
+                    choose_1of2_page.action(this, item.qans_a);
+                    // inform the control that choose_1of2_page must
+                    // get an event.
+
+                    output.question_a = substring(item.question_a, 0, 30);
+                    output.qa_correct = -1;
+                    output.qa_rt = -9999;
+                }
+
+                on_event:exit()
+                {
+                    output.qa_correct  = choose_1of2_page.response.correct;
+                    output.qans_a      = choose_1of2_page.response.answer;
+                    output.qa_rt       = choose_1of2_page.response.rt;
+                }
+            }
+
+            SubTrial questionb
+            {
+                on_event:entry()
+                {
+                    control.target = choose_1of2_page;
+                    choose_1of2_page.set_text(item.question_b);
+                    choose_1of2_page.set_label_texts(" Verdadera ", " Falso ");
+                    choose_1of2_page.set_answer_values(1, 0);
+                    choose_1of2_page.set_keys(KEY_Shift_L, KEY_Shift_R);
+                    choose_1of2_page.action(this, item.qans_b);
+                    
+                    output.question_b = substring(item.question_b, 0, 30);
+                    output.qb_correct = -1;
+                    output.qb_rt = -9999; 
+                }
+
+                on_event:exit()
+                {
+                    output.qb_correct  = choose_1of2_page.response.correct;
+                    output.qans_b      = choose_1of2_page.response.answer;
+                    output.qb_rt       = choose_1of2_page.response.rt;
+                }
+            }
+            
+            SubTrial questionc
+            {
+                on_event:entry()
+                {
+                    control.target = choose_1of2_page;
+                    choose_1of2_page.set_text(item.question_c);
+                    choose_1of2_page.set_label_texts(" Verdadera ", " Falso ");
+                    choose_1of2_page.set_answer_values(1, 0);
+                    choose_1of2_page.set_keys(KEY_Shift_L, KEY_Shift_R);
+                    choose_1of2_page.action(this, item.qans_c);
+
+                    output.question_c = substring(item.question_c, 0, 30);
+                    output.qc_correct = -1;
+                    output.qc_rt = -9999;
+                }
+
+                on_event:exit()
+                {
+                    output.qc_correct  = choose_1of2_page.response.correct;
+                    output.qans_c      = choose_1of2_page.response.answer;
+                    output.qc_rt       = choose_1of2_page.response.rt;
+                }
+            }
+
+            SubTrial questiond
+            {
+                on_event:entry()
+                {
+                    control.target = choose_1of2_page;
+                    choose_1of2_page.set_text(item.question_d);
+                    choose_1of2_page.set_label_texts(" Verderada ", " Falso ");
+                    choose_1of2_page.set_answer_values(1, 0);
+                    choose_1of2_page.set_keys(KEY_Shift_L, KEY_Shift_R);
+                    choose_1of2_page.action(this, item.qans_d);
+
+                    output.question_d = substring(item.question_d, 0, 30);
+                    output.qd_correct = -1;
+                    output.qd_rt = -9999;
+                }
+
+                on_event:exit()
+                {
+                    output.qd_correct  = choose_1of2_page.response.correct;
+                    output.qans_d      = choose_1of2_page.response.answer;
+                    output.qd_rt       = choose_1of2_page.response.rt;
                 }
             }
         }
@@ -418,8 +411,7 @@ Block task
             }
 	    }
     }
-
-
+}
 
 
 void action(Part caller)

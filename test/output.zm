@@ -27,18 +27,23 @@ record TestOutput
     string      question_a;     // true/false statement about stimulus (partial)
     int         qans_a;         // the answer the participant gave
     int         qa_correct;
-    
+    int         qa_rt;
+
     string      question_b;
     int         qans_b;
     int         qb_correct;
+    int         qb_rt;
     
     string      question_c;
     int         qans_c;
     int         qc_correct;
+    int         qc_rt;
     
     string      question_d;
     int         qans_d;
     int         qd_correct;
+    int         qd_rt;
+
     // correct answer to quest: 0=no, 1=yes, -1=n.a.
 
     int         rt1;            // reading time for starred segment 1 [ms]

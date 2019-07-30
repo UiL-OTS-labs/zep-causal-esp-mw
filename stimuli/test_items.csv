@@ -1,49 +1,605 @@
 ### Test items ###;;;;;;;;;;;
 index;id;type;segments;question_a;qans_a;question_b;qans_b;question_c;qans_c;question_d;qans_d
-0;1;CAUSAL;"van Dijk and Kintsch (1983) claim that discourse comprehension 
-involves three levels of representation./Among them, the situation 
-model is the most important./It refers to the people, states, 
-events, and actions of the mental microworld described in the text./
-Situation models have been difficult to investigate accurately for 
-several reasons./
+0;1;CAUSAL; "Van Dijk y Kintsch (1983) plantean que la comprensión del discurso
+involucra tres niveles de representación./#De ellos, el más importante 
+es el modelo de situación./# Hace alusión a las personas, estados, 
+sucesos y acciones del micromundo mental descrito en el texto./# 
+Por diversas razones, los modelos de situación han sido difíciles de 
+investigar con precisión./# 
 
-First, world knowledge plays a central role in building situation 
-models, yet world knowledge is imprecise, open-ended, vague, and 
-minimally visible to the investigator./ Second, situation models are
-unique representations that embody the idiosyncratic constraints 
-of the particular text./ It is difficult to identify general 
-mechanisms when the representations are so idiosyncratic./#Third,
-there is no sophisticated theory that both specifies how situation
-models are constructed and also is psychologically plausible./ 
-All this has imposed important challenges for researchers./# 
+Primero, el conocimiento del mundo tiene un papel central en la 
+construcción de los modelos de situación;/# sin embargo, el conocimiento
+del mundo es impreciso, vago y mínimamente visible para el investigador./#
+Segundo, los modelos de situación son representaciones únicas que 
+incorporan las restricciones idiosincrásicas del texto particular./# 
+Es difícil identificar mecanismos generales cuando las representaciones 
+son tan idiosincrásicas./# Tercero, aun no existe ninguna teoría 
+sofisticada y psicológicamente plausible que especifique cómo se 
+construyen estos modelos./# Todo esto ha impuesto importantes desafíos 
+a los investigadores./#
 
-Cognitive psychologists still continue making efforts in finding the
-most suitable way to investigate the quality of the situation model
-constructed by readers.";Cognitive psychologists are still looking for the best way to study the quality of the situation model.;1;Discourse comprehension, according to van Dijk and Kintsch, involves the construction of one level of representation: the situation model. ;0;According to some cognitive psychologists, previous knowledge plays a minor role in the process of discourse comprehension. ;1;Hey hey, my my. Your technician is never gonna die.;0
-1;1;NCAUSAL;"
-van Dijk and Kintsch (1983) claim that discourse comprehension 
-involves three levels of representation./Among them, the situation 
-model is the most important./It refers to the people, states, 
-events, and actions of the mental microworld described in the text./
-Situation models have been difficult to investigate accurately for 
-several reasons./
+Los psicólogos cognitivos aún continúan esforzándose para encontrar la
+manera más adecuada de investigar la calidad del modelo de situación que
+construyen los lectores.";Según algunos psicólogos cognitivos, el conocimiento previo cumple un papel menor en el proceso de comprensión del discurso.;0;La comprensión del discurso, según van Dijk and Kintsch, involucra la construcción de un nivel de representación: el modelo de situación.;0; Los psicólogos cognitivos aún están buscando la mejor manera para estudiar la calidad del modelo de situación. ;1; El hecho que varias teorías han explicado exitosamente cómo se construyen los modelos de situación ha llevado a que los psicólogos cognitivos todavía estén buscando la mejor manera de investigar la calidad de tales modelos.;0
+1;1;NCAUSAL;"Van Dijk y Kintsch (1983) plantean que la comprensión del discurso
+involucra tres niveles de representación./#De ellos, el más importante 
+es el modelo de situación./# Hace alusión a las personas, estados, 
+sucesos y acciones del micromundo mental descrito en el texto./# 
+La investigación en torno a los modelos de situación ha revelado 
+importantes hallazgos./#
 
-First, world knowledge plays a central role in building situation 
-models, yet world knowledge is imprecise, open-ended, vague, and 
-minimally visible to the investigator./ Second, situation models are
-unique representations that embody the idiosyncratic constraints 
-of the particular text./ It is difficult to identify general 
-mechanisms when the representations are so idiosyncratic./#Third,
-there is no sophisticated theory that both specifies how situation
-models are constructed and also is psychologically plausible./ 
-All this has imposed important challenges for researchers./# 
+Primero, el conocimiento del mundo tiene un papel central en la 
+construcción de los modelos de situación;/# sin embargo, el conocimiento 
+del mundo es impreciso, vago y mínimamente visible para el investigador./#
+Segundo, los modelos de situación son representaciones únicas que 
+incorporan las restricciones idiosincrásicas del texto particular./# 
+Es difícil identificar mecanismos generales cuando las representaciones 
+son tan idiosincrásicas./# Tercero, aun no existe ninguna teoría 
+sofisticada y psicológicamente plausible que especifique cómo se 
+construyen estos modelos./# Recientemente, los investigadores han
+comenzado a explorar nuevas áreas./#
 
-NONCAUSAL VERSION, (list two chosen)
+Los psicólogos cognitivos aún continúan esforzándose para encontrar la 
+manera más adecuada de investigar la calidad del modelo de situación 
+que construyen los lectores."; Según algunos psicólogos cognitivos, el conocimiento previo cumple un papel menor en el proceso de comprensión del discurso.;0;La comprensión del discurso, según van Dijk and Kintsch, involucra la construcción de un nivel de representación: el modelo de situación.;0; Los psicólogos cognitivos aún están buscando la mejor manera para estudiar la calidad del modelo de situación. ;1; El hecho que varias teorías han explicado exitosamente cómo se construyen los modelos de situación ha llevado a que los psicólogos cognitivos todavía estén buscando la mejor manera de investigar la calidad de tales modelos.;0
+0;2;NCAUSAL;"A mediados del siglo pasado, y basados en las ideas conductistas,
+el uso de constructos mentales para explicar fenómenos cognitivos estaba 
+simplemente prohibido./# Para promover una mayor rigurosidad científica 
+en las explicaciones psicológicas, solo se podían utilizar constructos 
+que se pudieran observar./# Se consideraba que lo único observable y 
+medible eran las asociaciones entre un estímulo y una respuesta./#
+Durante este período también se publica Estructuras Sintácticas 
+(Chomsky, 1957)./# 
 
+Chomsky criticó El Comportamiento Verbal, un libro escrito por uno de 
+los principales representantes del conductismo./# Con sus críticas, 
+Chomsky demostró de manera irrefutable que era imposible explicar 
+comportamientos humanos tan complejos como el lenguaje humano sin usar
+constructos mentales. /# Varios hitos se han producido en la lingüística 
+desde mediados de la década del 50./# 
 
-";Is this non-causal question A?;1;Is this question B, but in the non-causal version?;0;Is this question A?;0;Hey hey, my my. Your technician is never gonna die.;0
-1;2;CAUSAL;another causal STORY;Qa ;1;Qb;0;Qc;1;Qd;1
-0;2;NCAUSAL;"
-ANOTHER NONCASAL STORY";NQ1;1;NQ2;0;NQ3;1;NQ4;1
-1;3;CAUSAL;YES, CAUSALITY MATTERS;CQ1;1;CQ2;0;CQ3;1;CQ4;0
-0;3;NCAUSAL;BUT, IF WE SELECT GROUP ON, WE GET only (index) 0 items, of we get this story;NQ3;1;NQ2;0;NQ3;1;NQ4;1
+La inclusión de términos cognitivos (es decir, el mentalismo) representó
+una verdadera revolución no solo para la lingüística sino que para todas 
+las ciencias cognitivas."; La aparición del mentalismo no implicó cambios importantes en el escenario investigativo para lingüistas e investigadores cognitivistas. ;0;Los conductistas consideraban que era inválido explicar fenómenos cognitivos a través de constructos mentales.;1; Chomsky no logró demostrar que era posible explicar el lenguaje humano a través de constructos mentales.;0; El éxito de Chomsky al explicar el lenguaje humano usando constructos mentales sentó las bases para la aparición del mentalismo, una revolución crucial en la Lingüística y en otras áreas. ;1
+1;2;CAUSAL;"A mediados del siglo pasado, y basados en las ideas conductistas,
+el uso de constructos mentales para explicar fenómenos cognitivos estaba 
+simplemente prohibido./# Para promover una mayor rigurosidad científica 
+en las explicaciones psicológicas, solo se podían utilizar constructos 
+que se pudieran observar./# Este era el panorama hasta la publicación 
+de Estructuras Sintácticas del lingüista Noam Chomsky en 1957./# 
+
+Chomsky criticó El Comportamiento Verbal, un libro escrito por uno de 
+los principales representantes del conductismo./# Con sus críticas, 
+Chomsky demostró de manera irrefutable que era imposible explicar 
+comportamientos humanos tan complejos como el lenguaje humano sin usar
+constructos mentales./# Estas ideas tuvieron un impacto inmediato en la
+investigación sobre el lenguaje./# 
+
+La inclusión de términos cognitivos (es decir, el mentalismo) representó 
+una verdadera revolución no solo para la lingüística sino que para todas 
+las ciencias cognitivas."; La aparición del mentalismo no implicó cambios importantes en el escenario investigativo para lingüistas e investigadores cognitivistas. ;0;Los conductistas consideraban que era inválido explicar fenómenos cognitivos a través de constructos mentales.;1; Chomsky no logró demostrar que era posible explicar el lenguaje humano a través de constructos mentales.;0; El éxito de Chomsky al explicar el lenguaje humano usando constructos mentales sentó las bases para la aparición del mentalismo, una revolución crucial en la Lingüística y en otras áreas. ;1
+0;3;CAUSAL;"Desde los inicios de la lingüística del texto a mediados de la década
+del 60, uno de los objetivos centrales de la investigación 
+lingüística ha sido establecer una tipología que dé cuenta de todos los
+textos posibles./# En tal tarea, se enmarcan los conceptos de tipo textual
+y clase textual./# Si bien ambos términos parecen intercambiables, la 
+distinción entre ellos ha sido relevante para los lingüistas del texto./# 
+
+Heinemmann y Viehwegger (1991) plantean que el término clase textual se 
+aplica a clasificaciones empíricas, tal cual son realizadas por los 
+miembros de una comunidad lingüística, es decir, clasificaciones 
+cotidianas: esto es un cuento, esto es un chiste, esto es una novela,
+etc. /# Por el contrario, el término tipo textual se vincula a una 
+teoría para la clasificación científica de textos./# Esta distinción ha 
+tenido amplia aceptación entre los lingüistas del texto./# 
+
+Actualmente se afirma que los hablantes de una comunidad tienen un saber
+sobre clases textuales pero no sobre tipos textuales."; Uno de los principales objetivos de la lingüística del texto ha sido describir en detalle los textos;0;Los miembros de una comunidad tienen conocimientos sobre clases textuales, no de tipos textuales. ;1; El término tipo textual se refiere a la clasificación que harían los miembros de una comunidad.;0; El hecho que los hablantes de una comunidad sean capaces de distinguir textos tales como novelas o cuentos implica que tales hablantes tienen conocimiento sobre clases textuales.  ;1
+1;3;NCAUSAL;"Desde los inicios de la lingüística del texto a mediados de la década 
+del 60, uno de los objetivos centrales de la investigación 
+lingüística ha sido establecer una tipología que dé cuenta de todos los 
+textos posibles./# En tal tarea, se enmarcan los conceptos de tipo textual
+y clase textual./# En las últimas décadas, ambos términos han sido 
+ampliamente utilizados por los lingüistas del texto./# 
+
+Heinemmann y Viehwegger (1991) plantean que el término clase textual se
+aplica a clasificaciones empíricas, tal cual son realizadas por los 
+miembros de una comunidad lingüística, es decir, clasificaciones 
+cotidianas: esto es un cuento, esto es un chiste, esto es una novela, 
+etc./# Por el contrario, el término tipo textual se vincula a una 
+teoría para la clasificación científica de textos./# Ambos términos se
+relacionan con los conocimientos que poseen los usuarios de la lengua./# 
+
+Actualmente se afirma que los hablantes de una comunidad tienen un saber
+sobre clases textuales pero no sobre tipos textuales."; Uno de los principales objetivos de la lingüística del texto ha sido describir en detalle los textos;0;Los miembros de una comunidad tienen conocimientos sobre clases textuales, no de tipos textuales. ;1; El término tipo textual se refiere a la clasificación que harían los miembros de una comunidad.;0; El hecho que los hablantes de una comunidad sean capaces de distinguir textos tales como novelas o cuentos implica que tales hablantes tienen conocimiento sobre clases textuales.;1
+0;4;NCAUSAL;"En los estudios del texto, la relación entre la estructura de los 
+textos y su contenido ha sido un tema recurrente durante las últimas
+cuatro décadas./# Por ejemplo, consideremos un texto que, si bien trata 
+de un robo, no es en absoluto una típica narración, sino que un informe 
+policial o incluso un informe de daños para una compañía de seguros./#
+Casos como estos, altamente frecuentes en la vida cotidiana, han sido 
+estudiados con interés./# 
+
+Los textos mencionados se diferencian entre sí, no sólo por sus diferentes
+funciones comunicativas y sociales, sino que también por sus diferentes 
+tipos de construcción./# Estas estructuras globales que caracterizan un 
+tipo de texto se denominan superestructuras (van Dijk, 1977)./# En las 
+últimas décadas, los investigadores han propuesto la existencia de varios 
+tipos de superestructura./# 
+
+En la actualidad, los lingüistas del texto sostienen que una estructura
+narrativa es una superestructura, independiente del contenido de la 
+narración."; Actualmente, los lingüistas del texto consideran que la superestructura de un texto está estrechamente vinculada con su contenido. ;0;La relación entre la estructura de los textos y su contenido ha sido estudiada solo recientemente. ;0; Van Dijk (1977) propuso el término superestructura para referirse a la estructura global de un texto. ;1;El hecho que el término superestructura se refiera a la estructura global de un texto y no a su contenido conlleva que la estructura de una narración sea una superestructura.;1
+1;4;CAUSAL;"En los estudios del texto, la relación entre la estructura de los 
+textos y su contenido ha sido un tema recurrente durante las últimas
+cuatro décadas./# Por ejemplo, consideremos un texto que, si bien trata 
+de un robo, no es en absoluto una típica narración, sino que un informe 
+policial o incluso un informe de daños para una compañía de seguros./# 
+Para los lingüistas del texto, ha sido crucial identificar qué diferencia
+textos como estos./# 
+
+Los textos mencionados se diferencian entre sí, no sólo por sus diferentes
+funciones comunicativas y sociales, sino que también por sus diferentes 
+tipos de construcción./# Estas estructuras globales que caracterizan un 
+tipo de texto se denominan superestructuras (van Dijk, 1977)./# El
+concepto de superestructura ha sido ampliamente aceptado para distinguir
+entre la estructura y el contenido de los textos./#
+
+En la actualidad, los lingüistas del texto sostienen que una estructura
+narrativa es una superestructura, independiente del contenido de la
+narración."; Actualmente, los lingüistas del texto consideran que la superestructura de un texto está estrechamente vinculada con su contenido. ;0;La relación entre la estructura de los textos y su contenido ha sido estudiada solo recientemente. ;0;Van Dijk (1977) propuso el término superestructura para referirse a la estructura global de un texto. ;1;El hecho que el término superestructura se refiera a la estructura global de un texto y no a su contenido conlleva que la estructura de una narración sea una superestructura.;1
+0;5;CAUSAL;"Para de Beaugrande y Dressler (1981), un texto es un evento comunicativo 
+que cumple 7 normas de textualidad./# Una de ellas es la coherencia./# 
+La coherencia regula la posibilidad de que los conceptos y las 
+relaciones que subyacen bajo la superficie del texto sean accesibles
+e interactúen de forma relevante./# Las formas en que se establece 
+la coherencia en el texto afecta directamente la actividad cognitiva 
+que realizan los lectores./#
+
+Mecanismos lingüísticos tales como los conectores (porque, ya que, etc.) 
+y frases guías (después de eso, por tal razón, etc.) guían al lector a 
+establecer coherencia./# Es muy común que las relaciones no se 
+establezcan en el texto de un modo explícito./# Es decir, no se activan
+directamente a partir de los mecanismos lingüísticos que aparecen en la 
+superficie textual./# Esta falta de indicaciones explícitas constituye 
+un obstáculo que los lectores tratan de superar mediante diversas 
+actividades. /#
+
+Durante la lectura, los lectores generan expectativas acerca de las 
+diferentes relaciones que se pueden establecer entre los conceptos 
+que aparecen en el texto."; Mientras leen, los lectores generan múltiples expectativas respecto del significado de los conceptos que aparecen en el texto. ;0;Las relaciones entre los conceptos no siempre se establecen de manera explícita en el texto mediante mecanismos lingüísticos. ;1;Según de Beaugrande y Dressler (1981), la coherencia es una norma de textualidad que vincula los elementos en la superficie del texto. ;0;La falta de relaciones explícitas en el texto, es decir de relaciones señaladas por algún mecanismo  lingüístico, lleva a que los lectores generen numerosas expectativas acerca de cómo vincular un concepto con otro.;1
+1;5;NCAUSAL;"Para de Beaugrande y Dressler (1981), un texto es un evento comunicativo 
+que cumple 7 normas de textualidad./# Una de ellas es la coherencia./# 
+La coherencia regula la posibilidad de que los conceptos y las 
+relaciones que subyacen bajo la superficie del texto sean accesibles
+e interactúen de forma relevante./# En cualquier texto, las relaciones 
+entre los conceptos se pueden establecer de diferentes maneras./#
+
+Mecanismos lingüísticos tales como los conectores (porque, ya que, etc.) 
+y frases guías (después de eso, por tal razón, etc.) guían al lector a 
+establecer coherencia./# Es muy común que las relaciones no se 
+establezcan en el texto de un modo explícito./# Es decir, no se activan
+directamente a partir de los mecanismos lingüísticos que aparecen en la 
+superficie textual./# Según de Beaugrande y Dressler, cuando las personas
+leen un texto, ejecutan una variedad de actividades./#
+
+Durante la lectura, los lectores generan expectativas acerca de las 
+diferentes relaciones que se pueden establecer entre los conceptos 
+que aparecen en el texto."; Mientras leen, los lectores generan múltiples expectativas respecto del significado de los conceptos que aparecen en el texto. ;0;Las relaciones entre los conceptos no siempre se establecen de manera explícita en el texto mediante mecanismos lingüísticos. ;1;Según de Beaugrande y Dressler (1981), la coherencia es una norma de textualidad que vincula los elementos en la superficie del texto. ;0;La falta de relaciones explícitas en el texto, es decir de relaciones señaladas por algún mecanismo  lingüístico, lleva a que los lectores generen numerosas expectativas acerca de cómo vincular un concepto con otro.;1
+0;6;NCAUSAL;"En la Pragmática se asume que la situación comunicativa se configura
+por cuatro componentes materiales: el emisor, el destinatario, el
+enunciado y el entorno./# El enunciado es la expresión lingüística 
+que produce el emisor (hablante-escritor) y hace referencia a un 
+mensaje según un código lingüístico./# Entre las diversas características 
+de los enunciados, una que ha recibido especial interés es su extensión./#
+
+Un enunciado está delimitado por el cambio de sujetos discursivos, es
+decir, por la alternancia entre los hablantes./# Algunos ejemplos de
+enunciados son una oración en un correo electrónico, una pregunta en 
+una conversación o incluso un párrafo completo en un libro./# Esto 
+implica que los únicos criterios válidos utilizados para describir un 
+enunciado son contextuales./# Existen diversos tipos de enunciados,
+tales como los asertivos, interrogativos e imperativos./#
+
+Es imposible caracterizar un enunciado por medio de criterios 
+gramaticales, tales como el orden de las palabras o el modo verbal."; La extensión de un enunciado está delimitada por la alternancia entre los hablantes.;1;Los criterios que mejor pueden describir un enunciado son aquellos que pertenecen al plano gramatical.;0;En Pragmática, se considera que un enunciado no es un elemento perteneciente a la situación comunicativa. ;0;El hecho que los mejores criterios para describir los enunciados sean aquellos que reflejan el contexto de cada situación comunicativa conlleva que los criterios gramaticales no son apropiados para tal descripción.  ;1
+1;6;CAUSAL;"En la Pragmática se asume que la situación comunicativa se
+configura por cuatro componentes materiales: el emisor, el destinatario, 
+el enunciado y el entorno./# El enunciado es la expresión lingüística 
+que produce el emisor (hablante-escritor) y hace referencia a un mensaje
+según un código lingüístico./# Entender adecuadamente qué es un enunciado
+representa un aspecto crucial en la pragmática./#
+
+Un enunciado está delimitado por el cambio de sujetos discursivos, es
+decir, por la alternancia entre los hablantes./# Algunos ejemplos de 
+enunciados son una oración en un correo electrónico, una pregunta en 
+una conversación o incluso un párrafo completo en un libro./# Esto
+implica que los únicos criterios válidos utilizados para describir un
+enunciado son contextuales./# Esta idea ha resultado en que otros 
+criterios no sean considerados para el estudio de los enunciados./#
+
+Es imposible caracterizar un enunciado por medio de criterios 
+gramaticales, tales como el orden de las palabras o el modo verbal." ; La extensión de un enunciado está delimitada por la alternancia entre los hablantes. ;1;Los criterios que mejor pueden describir un enunciado son aquellos que pertenecen al plano gramatical.;0;En Pragmática, se considera que un enunciado no es un elemento perteneciente a la situación comunicativa. ;0;El hecho que los mejores criterios para describir los enunciados sean aquellos que reflejan el contexto de cada situación comunicativa conlleva que los criterios gramaticales no son apropiados para tal descripción.  ;1
+0;7;CAUSAL; "Labov, un destacado académico en Sociolingüística, ha encontrado que
+las personas hablan de forma diferente./#Por ejemplo, los adolescentes 
+usan palabras y expresiones que sus padres o abuelos ni siquiera 
+conocen (o al revés)./# Basado en los trabajos clásicos de Labov, la 
+sociolingüística cuantitativa enfatiza la cuantificación de los factores 
+lingüísticos y sociales que condicionan la forma en la que hablan las
+personas./# Los hallazgos reportados en este tipo de estudios tienen 
+implicancias directas en cómo se debiera llevar a cabo la investigación 
+sociolingüística./#
+
+Los factores sociales no funcionan de igual manera en todas las comunidades./#
+Es posible que en un lugar, la edad influya más en la variación lingüística 
+que el género./# También es posible que en otro lugar, los factores 
+socioeconómicos influyan más que la edad o el género./# Considerando estos 
+antecedentes, se ha planteado la necesidad de implementar algunos pasos 
+metodológicos./#
+
+Antes de comenzar un estudio sociolingüístico, se debieran realizar 
+estudios exploratorios que confirmen cuáles son las variables realmente
+importantes en la estructura social."; La sociolingüística cuantitativa pretende determinar los factores que explicarían la evolución de la lengua en una comunidad. ;0;Los sociolingüistas han identificado que en todas la comunidades, factores como edad o nivel económico afectan de igual manera. ;0;Previo a un estudio sociolingüístico, se deberían identificar las variables realmente importantes en una comunidad. ;1;El hecho que las variables sociales afectan de igual manera el uso del lenguaje en distintas comunidades requiere la identificación previa de las variables importantes en una comunidad.  ;0
+1;7;NCAUSAL;"Labov, un destacado académico en Sociolingüística, ha encontrado que
+las personas hablan de forma diferente./#Por ejemplo, los adolescentes 
+usan palabras y expresiones que sus padres o abuelos ni siquiera 
+conocen (o al revés)./# Basado en los trabajos clásicos de Labov, la 
+sociolingüística cuantitativa enfatiza la cuantificación de los factores 
+lingüísticos y sociales que condicionan la forma en la que hablan las
+personas/# Los hallazgos reportados en estos estudios han mostrado el 
+comportamiento de estos factores en diferentes comunidades./#
+
+LLos factores sociales no funcionan de igual manera en todas las comunidades./#
+Es posible que en un lugar, la edad influya más en la variación lingüística 
+que el género./# También es posible que en otro lugar, los factores 
+socioeconómicos influyan más que la edad o el género./# También es 
+posible que en algunas comunidades la variación lingüística esté
+más influenciada por factores demográficos./#  
+
+Antes de comenzar un estudio sociolingüístico, se debieran realizar 
+estudios exploratorios que confirmen cuáles son las variables realmente
+importantes en la estructura social."; La sociolingüística cuantitativa pretende determinar los factores que explicarían la evolución de la lengua en una comunidad. ;0;Los sociolingüistas han identificado que en todas la comunidades, factores como edad o nivel económico afectan de igual manera. ;0;Previo a un estudio sociolingüístico, se deberían identificar las variables realmente importantes en una comunidad. ;1;El hecho que las variables sociales afectan de igual manera el uso del lenguaje en distintas comunidades requiere la identificación previa de las variables importantes en una comunidad.  ;0
+0;8;NCAUSAL;"En Lingüística Cognitiva, la categorización es un mecanismo cognitivo 
+mediante el cual organizamos la información obtenida de nuestra 
+experiencia. /# La categorización se realiza mediante dos procesos 
+complementarios: la generalización y la discriminación./# Ambos procesos 
+involucran diferentes formas de razonamiento y organización de la 
+información./# 
+
+Cuando generalizamos, obviamos las diferencias entre entidades y las
+agrupamos según sus semejanzas./# Por el contrario, cuando discriminamos, 
+distinguimos los rasgos que diferencian dos o más entidades para no 
+confundirlas./# Si no generalizáramos, no superaríamos el nivel de las 
+entidades individuales, lo que no nos permitiría organizar los conceptos 
+en nuestra mente./# Por otra parte, si no discrimináramos, todo sería
+uno y tampoco podríamos organizar conceptos./# La categorización resulta
+en la generación de categorías cognitivas que se almacenan en nuestro 
+cerebro./#
+
+La categorización es una habilidad de razonamiento fundamental que nos 
+permite comprender la complejidad del mundo que nos rodea."; La generalización se basa en la identificación de las diferencias salientes que existen entre las entidades.;0;La categorización es un proceso cognitivo complejo que se constituye por tres subprocesos complementarios.;0;La categorización es una habilidad crucial de razonamiento que nos permite entender el mundo que nos rodea. ;1;El hecho que la generalización no siempre sea necesaria para organizar exitosamente los conceptos en nuestra mente ha llevado a que los lingüistas cognitivos asuman que la categorización sea crucial para entender el mundo que nos rodea. ;0
+1;8;CAUSAL;"En Lingüística Cognitiva, la categorización es un mecanismo cognitivo 
+mediante el cual organizamos la información obtenida de nuestra 
+experiencia. /# La categorización se realiza mediante dos procesos 
+complementarios: la generalización y la discriminación./#
+Ambos procesos cumplen un papel crucial, tanto en nuestro desarrollo
+social como intelectual./#
+
+Cuando generalizamos, obviamos las diferencias entre entidades y las 
+agrupamos según sus semejanzas./# Por el contrario, cuando discriminamos, 
+distinguimos los rasgos que diferencian dos o más entidades para no 
+confundirlas./# Si no generalizáramos, no superaríamos el nivel de las 
+entidades individuales, lo que no nos permitiría organizar los conceptos
+en nuestra mente./# Por otra parte, si no discrimináramos, todo sería 
+uno y tampoco podríamos organizar conceptos./# Basados en lo anterior, 
+los lingüistas cognitivos otorgan a la categorización un papel central
+en la actividad humana./#
+
+La categorización es una habilidad de razonamiento fundamental que nos
+permite comprender la complejidad del mundo que nos rodea."; La generalización se basa en la identificación de las diferencias salientes que existen entre las entidades.;0;La categorización es un proceso cognitivo complejo que se constituye por tres subprocesos complementarios.;0;La categorización es una habilidad crucial de razonamiento que nos permite entender el mundo que nos rodea. ;1;El hecho que la generalización no siempre sea necesaria para organizar exitosamente los conceptos en nuestra mente ha llevado a que los lingüistas cognitivos asuman que la categorización sea crucial para entender el mundo que nos rodea. ;0
+0;9;CAUSAL;"El cerebro humano y su funcionamiento han concitado el interés 
+científico desde hace décadas./# Un aspecto que ha cobrado notoriedad 
+es la relación entre el cerebro y el lenguaje, lo que ha sido explorado 
+desde diversas perspectivas y con variadas herramientas./# El progreso
+tecnológico de los últimos años ha permitido desarrollar herramientas 
+que han facilitado este tipo de investigación./# 
+
+La neuroimagen, por ejemplo, es una técnica que ha permitido explorar el 
+cerebro humano intacto analizando las variaciones de la actividad de las
+neuronas en algunos de los procesos mentales específicos del ser humano 
+(procesos de razonamiento, de comprensión, de inferencias, etc.)./# Este 
+tipo de técnica detecta con exactitud los cambios en el flujo sanguíneo 
+que acompaña a la actividad neuronal que se desencadena al ejecutar alguna
+actividad específica./# El uso de esta técnica durante las últimas décadas
+ha entregado resultados extraordinarios acerca del funcionamiento cerebral./#
+
+Actualmente, es posible identificar algunas de las áreas cerebrales
+específicas que se activan cuando las personas leen."; Actualmente existe escaso conocimiento acerca de las áreas cerebrales específicas que se activan durante la lectura. ;0;Ha existido un interés prolongado por estudiar la relación entre el cerebro y el lenguaje.;1;La neuroimagen es una técnica que ha permitido medir con exactitud los cambios de actividad eléctrica del cerebro.;0;El hecho que la neuroimagen detecta los cambios de flujo sanguíneo en el cerebro durante actividades como la lectura ha permitido conocer algunas de las áreas cerebrales específicas que se activan cuando leemos.;1
+1;9;NCAUSAL;"El cerebro humano y su funcionamiento han concitado el interés 
+científico desde hace décadas./# Un aspecto que ha cobrado notoriedad 
+es la relación entre el cerebro y el lenguaje, lo que ha sido explorado 
+desde diversas perspectivas y con variadas herramientas./# Últimamente también 
+se han desarrollado varias técnicas, con variados grados de sofisticación./#
+
+La neuroimagen, por ejemplo, es una técnica que ha permitido explorar el 
+cerebro humano intacto analizando las variaciones de la actividad de las
+neuronas en algunos de los procesos mentales específicos del ser humano 
+(procesos de razonamiento, de comprensión, de inferencias, etc.)./# Este 
+tipo de técnica detecta con exactitud los cambios en el flujo sanguíneo 
+que acompaña a la actividad neuronal que se desencadena al ejecutar alguna
+actividad específica./# Adicionalmente, técnicas  como el EEG miden la 
+actividad eléctrica del cerebro cuando procesa diversos tipos de estímulos./#
+
+Actualmente, es posible identificar algunas de las áreas cerebrales 
+específicas que se activan cuando las personas leen."; Actualmente existe escaso conocimiento acerca de las áreas cerebrales específicas que se activan durante la lectura. ;0;Ha existido un interés prolongado por estudiar la relación entre el cerebro y el lenguaje.;1;La neuroimagen es una técnica que ha permitido medir con exactitud los cambios de actividad eléctrica del cerebro.;0;El hecho que la neuroimagen detecta los cambios de flujo sanguíneo en el cerebro durante actividades como la lectura ha permitido conocer algunas de las áreas cerebrales específicas que se activan cuando leemos;1
+0;10;NCAUSAL;"En la lingüística cognitiva, la metáfora es considerada un fenómeno 
+cognitivo en el que usamos nuestro conocimiento sobre un campo conceptual, 
+habitualmente cercano a la experiencia física para comprender otro campo, 
+habitualmente más complejo y abstracto./# Para explicar este fenómeno, se 
+utilizan los conceptos de metáfora conceptual y expresión metafórica./# 
+Ambos términos hacen referencia a los componentes principales desde los 
+cuales se puede estudiar el fenómeno./#
+
+La metáfora conceptual corresponde a un esquema abstracto de pensamiento 
+que sirve de base para conceptualizar un fenómeno, mientras que las 
+expresiones metafóricas corresponden a las múltiples formas en las cuales
+nos referimos a esa idea abstracta./# Por ejemplo, desperdiciar el tiempo 
+o ahorrar tiempo son expresiones metafóricas que se derivan de la 
+metáfora conceptual EL TIEMPO ES DINERO./# Las expresiones metafóricas 
+pueden variar entre idiomas, aunque la metáfora conceptual sea la misma./#  
+
+Los lingüistas cognitivos sostienen que las metáforas conceptuales son 
+parte del dominio cognitivo humano, mientras que las expresiones 
+metafóricas, son parte del lenguaje."; Para los lingüistas cognitivos, las expresiones metafóricas son parte del dominio cognitivo, mientras que las metáforas conceptuales son parte del lenguaje. ;0;Las metáforas son un fenómeno cognitivo a través del cual comprendemos un campo complejo basados en nuestro conocimiento acerca de otro campo. ;1;En la Lingüística Cognitiva, las expresiones metafóricas son esquemas abstractos de pensamiento que nos formamos acerca de diversos fenómenos. ;0;Basados en la idea de que las metáforas conceptuales y las expresiones metafóricas son parte de diferentes esferas, los lingüistas cognitivos plantean que las metáforas conceptuales pertenecen a la cognición mientras que las expresiones metafóricas, al lenguaje.  ;1
+1;10;CAUSAL;"n la lingüística cognitiva, la metáfora es considerada un fenómeno 
+cognitivo en el que usamos nuestro conocimiento sobre un campo conceptual, 
+habitualmente cercano a la experiencia física para comprender otro campo, 
+habitualmente más complejo y abstracto./# Para explicar este fenómeno, se 
+utilizan los conceptos de metáfora conceptual y expresión metafórica./# 
+La diferencia entre estos conceptos es crucial para un estudio certero de 
+la metáfora./#
+
+La metáfora conceptual corresponde a un esquema abstracto de pensamiento
+que sirve de base para conceptualizar un fenómeno, mientras que las
+expresiones metafóricas corresponden a las múltiples formas en las cuales
+nos referimos a esa idea abstracta./# Por ejemplo, desperdiciar el tiempo 
+o ahorrar tiempo son expresiones metafóricas que se derivan de la
+metáfora conceptual EL TIEMPO ES DINERO./# La idea que las expresiones
+metafóricas y las metáforas conceptuales operan en niveles diferentes ha
+sido ampliamente aceptada./#
+
+Los lingüistas cognitivos sostienen que las metáforas conceptuales son 
+parte del dominio cognitivo humano, mientras que las expresiones
+metafóricas, son parte del lenguaje."; Para los lingüistas cognitivos, las expresiones metafóricas son parte del dominio cognitivo, mientras que las metáforas conceptuales son parte del lenguaje. ;0;Las metáforas son un fenómeno cognitivo a través del cual comprendemos un campo complejo basados en nuestro conocimiento acerca de otro campo. ;1;En la Lingüística Cognitiva, las expresiones metafóricas son esquemas abstractos de pensamiento que nos formamos acerca de diversos fenómenos. ;0;Basados en la idea de que las metáforas conceptuales y las expresiones metafóricas son parte de diferentes esferas, los lingüistas cognitivos plantean que las metáforas conceptuales pertenecen a la cognición mientras que las expresiones metafóricas, al lenguaje.  ;1
+0;11;CAUSAL;"Investigadores y educadores coinciden en que la lectura es
+una herramienta fundamental para sobrevivir en la sociedad actual, en 
+la que cada día se generan grandes volúmenes de información escrita./# 
+Por diversas razones, el desarrollo de la comprensión lectora ha sido 
+un tema de interés para investigadores y autoridades./#
+
+Primero, la lectura mejora las relaciones familiares y sociales./# 
+Segundo, estimula la imaginación, nuestros conocimientos y nos acerca 
+a una mejor interpretación del medio en que vivimos./# Tercero, varios 
+investigadores han planteado convincentemente que el desarrollo de
+habilidades de lectura favorece el crecimiento personal y profesional,
+facilitando la participación social de los sujetos./# Cuarto, numerosos 
+psicólogos cognitivos han demostrado que en la escuela, gran parte del 
+aprendizaje depende de que los estudiantes comprendan lo que leen./# 
+Conscientes de estos planteamientos, las autoridades educativas de 
+nuestro país han implementado numerosas políticas./#
+
+El Ministerio de Educación ha realizado ambiciosas modificaciones 
+curriculares para que se desarrolle la comprensión lectora desde
+temprana edad en el aula."; Los investigadores y educadores no concuerdan plenamente acerca del rol de la lectura en nuestra sociedad actual.;0;Se ha demostrado que la lectura tiene efectos positivos en el plano personal, pero no necesariamente en el social. ;0;El Ministerio de Educación ha implementado varias medidas para desarrollar tempranamente la comprensión lectora en el aula. ;1;El hecho que las habilidades de comprensión lectora podrían ser importantes para las futuras generaciones ha motivado al Ministerio de Educación a desarrollar tales habilidades en la escuela desde temprana edad.  ;0
+1;11;NCAUSAL;"Investigadores y educadores coinciden en que la lectura es
+una herramienta fundamental para sobrevivir en la sociedad actual, en 
+la que cada día se generan grandes volúmenes de información escrita./# 
+La importancia de la lectura se puede observar en diferentes aspectos, 
+desde los eminentemente individuales a los sociales./#
+
+Primero, la lectura mejora las relaciones familiares y sociales./# 
+Segundo, estimula la imaginación, nuestros conocimientos y nos acerca 
+a una mejor interpretación del medio en que vivimos./# Tercero, varios 
+investigadores han planteado convincentemente que el desarrollo de
+habilidades de lectura favorece el crecimiento personal y profesional,
+facilitando la participación social de los sujetos./# Cuarto, numerosos 
+psicólogos cognitivos han demostrado que en la escuela, gran parte del 
+aprendizaje depende de que los estudiantes comprendan lo que leen. /# 
+Además, es bien sabido que la lectura favorece el desarrollo de la 
+memoria y de la concentración./#
+
+El Ministerio de Educación ha realizado ambiciosas modificaciones 
+curriculares para que se desarrolle la comprensión lectora desde
+temprana edad en el aula."; Los investigadores y educadores no concuerdan plenamente acerca del rol de la lectura en nuestra sociedad actual.;0;Se ha demostrado que la lectura tiene efectos positivos en el plano personal, pero no necesariamente en el social. ;0;El Ministerio de Educación El Ministerio de Educación ha implementado varias medidas para desarrollar tempranamente la comprensión lectora en el aula.  ;1;El hecho que las habilidades de comprensión lectora podrían ser importantes para las futuras generaciones ha motivado al Ministerio de Educación a desarrollar tales habilidades en la escuela desde temprana edad.  ;0
+0;12;NCAUSAL;"El generativismo, corriente fundada por el lingüista Noam Chomsky,
+ofrecía un modelo del lenguaje explícito, formal y riguroso./# Los
+generativistas se focalizaron en el estudio de la sintaxis, dejando 
+de lado aspectos que algunos estudiosos consideraban que eran 
+imprescindibles para el estudio de la lengua, como los aspectos 
+culturales, históricos, psicológicos, sociales o estilísticos./# 
+También se caracterizó por dejar de lado otros aspectos, tales
+como los asociados al significado./# 
+
+A mediados de los años 60, un grupo de importantes académicos 
+comenzaron a plantear que cualquier estudio del lenguaje que deje
+de lado aspectos asociados al significado es extremadamente forzado
+e incompleto./# Planteaban que debido a que el lenguaje es básicamente
+un medio de comunicación, la completa exclusión del significado 
+implicaba que un componente crucial para la comunicación humana había 
+sido ignorado./# También se criticaba si la gramática chomskiana era
+realmente autónoma e independiente del significado./#
+
+Algunos destacados académicos como Lakoff, Fillmore o Langacker iniciaron 
+nuevas líneas de investigación, en las que el significado era el componente 
+central."; El generativismo, en su modelo formal y riguroso del lenguaje, dejó de lado fenómenos asociados al significado. ;1;Solo recientemente, los investigadores han comenzado a plantear que ignorar los fenómenos del significado es problemático. ;0;Varios investigadores comenzaron nuevas líneas de estudio, en las que el significado era un elemento secundario.;0;El hecho que el significado, un aspecto crucial de la comunicación humana, haya sido ignorado en los modelos generativistas del lenguaje resultó en que numerosos académicos iniciaran nuevas líneas de estudio, focalizándose en el significado. ;1
+1;12;CAUSAL;"El generativismo, corriente fundada por el lingüista Noam Chomsky,
+ofrecía un modelo del lenguaje explícito, formal y riguroso./# Los
+generativistas se focalizaron en el estudio de la sintaxis, dejando 
+de lado aspectos que algunos estudiosos consideraban que eran 
+imprescindibles para el estudio de la lengua, como los aspectos 
+culturales, históricos, psicológicos, sociales o estilísticos./# La 
+exclusión del componente semántico en el análisis lingüístico tuvo
+consecuencias en la escena investigativa./#
+
+A mediados de los años 60, un grupo de importantes académicos 
+comenzaron a plantear que cualquier estudio del lenguaje que deje
+de lado aspectos asociados al significado es extremadamente forzado
+e incompleto./# Planteaban que debido a que el lenguaje es básicamente
+un medio de comunicación, la completa exclusión del significado 
+implicaba que un componente crucial para la comunicación humana había 
+sido ignorado./# A la luz de estas críticas, emergieron nuevas maneras
+de llevar a cabo la investigación lingüística./#
+
+Algunos destacados académicos como Lakoff, Fillmore o Langacker iniciaron 
+nuevas líneas de investigación, en las que el significado era el componente
+central."; El generativismo, en su modelo formal y riguroso del lenguaje, dejó de lado fenómenos asociados al significado. ;1;Solo recientemente, los investigadores han comenzado a plantear que ignorar los fenómenos del significado es problemático. ;0;Varios investigadores comenzaron nuevas líneas de estudio, en las que el significado era un elemento secundario. (;0;El hecho que el significado, un aspecto crucial de la comunicación humana, haya sido ignorado en los modelos generativistas del lenguaje resultó en que numerosos académicos iniciaran nuevas líneas de estudio, focalizándose en el significado. ;1
+0;13;CAUSAL;"A comienzos de los años 60, el sociólogo inglés Basil Bernstein, propuso
+una influyente teoría sobre la relación entre el lenguaje y el éxito
+escolar./# La teoría propone la existencia de dos códigos: el elaborado
+y el restringido./# La correcta adquisición de ambos códigos tiene una 
+gran influencia en el desempeño escolar./#
+
+El código restringido es concreto./# Depende fuertemente del contexto 
+inmediato para comunicar significados y su complejidad léxico-sintáctica
+es baja./# Por el contrario, el código elaborado, el que se usa y promueve
+en la escuela, es más generalizante y comunica significados independiente 
+del contexto./# Su complejidad léxico-sintáctica es mayor./# Los sociólogos
+han notado que los niños de clases media y alta están más expuestos a este 
+código./# Basados en esto, se han hecho importantes planteamientos sobre la 
+exposición de los niños a estos códigos y su rendimiento escolar./#
+
+El fracaso escolar de niños de familias socioeconómicas desventajadas 
+se debería a su falta de acceso al código elaborado."; La teoría propuesta por Basil Bernstein busca explicar la relación entre la inteligencia general y el éxito escolar. ;0;El código elaborado, cuya complejidad léxico-sintáctica es baja, depende fuertemente del contexto para comunicar significados. ;0;El fracaso escolar de niños de familias de clase social baja podría deberse a su escaso acceso al código elaborado. ;1;El hecho que el código elaborado tenga una baja complejidad léxico-sintáctica sugiere que el fracaso escolar de niños de familias de clases social baja es el resultado de su escasa exposición a ese código. ;0
+1;13;NCAUSAL;"A comienzos de los años 60, el sociólogo inglés Basil Bernstein, propuso
+una influyente teoría sobre la relación entre el lenguaje y el éxito
+escolar./# La teoría propone la existencia de dos códigos: el elaborado
+y el restringido./# Ambos códigos se caracterizan por poseer una serie de rasgos
+lingüísticos distintivos./# 
+
+El código restringido es concreto./# Depende fuertemente del contexto 
+inmediato para comunicar significados y su complejidad léxico-sintáctica
+es baja./# Por el contrario, el código elaborado, el que se usa y promueve
+en la escuela, es más generalizante y comunica significados independiente 
+del contexto./# Su complejidad léxico-sintáctica es mayor./# Los sociólogos
+han notado que los niños de clases media y alta están más expuestos a este 
+código./# Según educadores y sociólogos,tanto el código elaborado como el
+restringido son importantes en el proceso de escolarización./# 
+
+El fracaso escolar de niños de familias socioeconómicas desventajadas
+se debería a su falta de acceso al código elaborado."; La teoría propuesta por Basil Bernstein busca explicar la relación entre la inteligencia general y el éxito escolar. ;0;El código elaborado, cuya complejidad léxico-sintáctica es baja, depende fuertemente del contexto para comunicar significados. ;0;El fracaso escolar de niños de familias de clase social baja podría deberse a su escaso acceso al código elaborado. ;1;El hecho que el código elaborado tenga una baja complejidad léxico-sintáctica sugiere que el fracaso escolar de niños de familias de clases social baja es el resultado de su escasa exposición a ese código. ;0
+0;14;NCAUSAL;"El estudio de los procesos de lectura y escritura siempre ha
+estimulado discusiones acerca de sus conexiones, especialmente en el
+aula./# Tanto el lector como el escritor elaboran un propósito, 
+construyen significado, siguen patrones de pensamiento similares,
+recurriendo a sus experiencias pasadas./# Además, ambos procesos 
+se encuentran enmarcados en situaciones comunicativas específicas./# 
+
+Dado que tanto la lectura como la escritura son procesos que involucran
+la interacción entre los sujetos con sus contextos específicos, una
+persona puede tener experiencias muy diferentes con ambas actividades./# 
+Puede tener actitudes distintas hacia éstas y puede ser más efectiva en
+una que en otra./# La redacción y la lectura son tan diferentes que no 
+se pueden considerar como imágenes en un  espejo: lo que hace el lector
+no es simplemente revertir el proceso de ser escritor./# Junto con lo
+anterior, tanto la lectura como la escritura cumplen diferentes 
+propósitos en la escuela./# 
+
+Los estudiantes que desarrollan sus habilidades en lectura, no mejoran 
+en las de escritura de manera inmediata, o viceversa"; Según varios educadores, solo la lectura involucra la interacción entre los sujetos y sus contextos específicos.;0;Solo durante la escritura, una persona elabora un propósito, construye significado y sigue una línea de pensamiento.;0;Los estudiantes que desarrollan sus habilidades de lectura no mejoran en las de escritura automáticamente, o viceversa.;1;El hecho que una persona tenga la misma actitud hacia la lectura y la escritura implica que el desarrollo de una de ellas no involucra la mejora inmediata en la otra. ;0
+1;14;CAUSAL;"El estudio de los procesos de lectura y escritura siempre ha
+estimulado discusiones acerca de sus conexiones, especialmente en el 
+aula./# Tanto el lector como el escritor elaboran un propósito, 
+construyen significado, siguen patrones de pensamiento similares,
+recurriendo a sus experiencias pasadas./# A pesar de lo anterior, ambos 
+procesos difieren significativamente./#
+
+Dado que tanto la lectura como la escritura son procesos que involucran
+la interacción entre los sujetos con sus contextos específicos, una 
+persona puede tener experiencias muy diferentes con ambas actividades./#
+Puede tener actitudes distintas hacia éstas y puede ser más efectiva en
+una que en otra./# La redacción y la lectura son tan diferentes que no 
+se pueden considerar como imágenes en un  espejo: lo que hace el lector
+no es simplemente revertir el proceso de ser escritor./# Basados en esto,
+los educadores han hecho importantes planteamientos acerca del desarrollo
+de las habilidades de lectura y de escritura./# 
+
+Los estudiantes que desarrollan sus habilidades en lectura, no mejoran 
+en las de escritura de manera inmediata, o viceversa."; Según varios educadores, solo la lectura involucra la interacción entre los sujetos y sus contextos específicos.;0;Solo durante la escritura, una persona elabora un propósito, construye significado y sigue una línea de pensamiento.;0;Los estudiantes que desarrollan sus habilidades de lectura no mejoran en las de escritura automáticamente, o viceversa.;1;El hecho que una persona tenga la misma actitud hacia la lectura y la escritura implica que el desarrollo de una de ellas no involucra la mejora inmediata en la otra. ;0
+0;15;CAUSAL;"Durante el último siglo se han extinguido alrededor de 400 idiomas, 
+aproximadamente uno cada tres meses./# Los lingüistas estiman que el 
+50% de las 6.500 lenguas restantes del mundo habrá desaparecido a 
+finales de este siglo./# Los reportes y estudios publicados últimamente 
+han despertado la preocupación de la comunidad científica./#
+
+Debido a que hay tantos idiomas en peligro, es imposible etiquetar uno 
+solo como el más complejo o el más amenazado./# Sin embargo, hay al 
+menos 100 lenguas en todo el mundo que solo tienen un puñado de
+hablantes, desde el Ainu en Japón al Yagán en Chile./# El Atlas de las 
+lenguas en peligro en el mundo de la Unesco clasifica 576 lenguas como
+en grave peligro y a miles más como amenazadas./# Frente a este
+preocupante escenario, el estudio de las lenguas gravemente amenazadas
+ha crecido considerablemente en las últimas décadas./#
+
+Desde el comienzo del siglo 21, los lingüistas han estado confeccionando
+diccionarios, grabando y traduciendo historias orales de las lenguas que 
+están desapareciendo."; Los lingüistas han estado elaborando diccionarios de las lenguas que están desapareciendo, sin preocuparse necesariamente de registrar y traducir sus historias orales. ;0;Los lingüistas estiman que hacia fines de este siglo habrá desaparecido prácticamente la mitad de las lenguas actualmente existente.;1;Según el Atlas de las lenguas en peligro confeccionado por Unesco, la cantidad de lenguas en grave peligro no supera las 100. ;0;El hecho que sea imposible considerar solo una lengua como la más amenazada  ha motivado a los lingüistas a registrar y traducir historias orales de las lenguas que están desapareciendo. ;0
+1;15;NCAUSAL;"Durante el último siglo se han extinguido alrededor de 400 idiomas, 
+aproximadamente uno cada tres meses./# Los lingüistas estiman que el 
+50% de las 6.500 lenguas restantes del mundo habrá desaparecido a 
+finales de este siglo./# Se han llevado a cabo numerosos estudios 
+lingüísticos acerca de las características de las lenguas amenazadas./#
+
+Debido a que hay tantos idiomas en peligro, es imposible etiquetar uno
+solo como el más complejo o el más amenazado./# Sin embargo, hay al 
+menos 100 lenguas en todo el mundo que solo tienen un puñado de 
+hablantes, desde el Ainu en Japón al Yagán en Chile. /#El Atlas de las 
+lenguas en peligro en el mundo de la Unesco clasifica 576 lenguas como 
+en grave peligro y a miles más como amenazadas./# En Australia, se han 
+extinguido cerca de 100 de las 300 lenguas aborígenes que se hablaban 
+antes de la llegada de los europeos./#
+
+Desde el comienzo del siglo 21, los lingüistas han estado confeccionando
+diccionarios, grabando y traduciendo historias orales de las lenguas que 
+están desapareciendo."; Los lingüistas han estado elaborando diccionarios de las lenguas que están desapareciendo, sin preocuparse necesariamente de registrar y traducir sus historias orales. ;0;Los lingüistas estiman que hacia fines de este siglo habrá desaparecido prácticamente la mitad de las lenguas actualmente existente.;1;Según el Atlas de las lenguas en peligro confeccionado por Unesco, la cantidad de lenguas en grave peligro no supera las 100. ;0;El hecho que sea imposible considerar solo una lengua como la más amenazada  ha motivado a los lingüistas a registrar y traducir historias orales de las lenguas que están desapareciendo. ;0
+0;16;NCAUSAL;"Los educadores plantean que sin importar las habilidades lingüísticas
+generales que poseen los estudiantes al finalizar su educación 
+secundaria, un factor que podría determinar su éxito o fracaso
+en la universidad es cómo se comunica el conocimiento en cada 
+disciplina./# Se han implementado numerosos estudios lingüísticos 
+para describir los textos que se usan en la universidad./# 
+
+Algunos lingüistas han llevado a cabo descripciones exhaustivas de 
+los patrones lingüísticos que mejor caracterizan los textos académicos 
+entre las disciplinas./# Han estudiado rasgos como la complejidad 
+sintáctica, la presencia-ausencia del autor y la organización de 
+contenidos./# Los hallazgos revelan que cada disciplina transmite su 
+conocimiento según sus propias convenciones y necesidades./# Basados 
+en estos hallazgos, varios especialistas sugieren que, en la educación 
+superior, las prácticas discursivas, pedagógicas y evaluativas deben 
+ser pertinentes a cada disciplina./# También enfatizan que los materiales
+didácticos consideren los rasgos discursivos característicos de cada 
+disciplina. /#
+
+Muchas universidades han comenzado a incluir cursos para enseñar a los
+estudiantes las habilidades comunicativas que sus disciplinas demandan."; Los investigadores educativos consideran que las habilidades lingüísticas generales de los estudiantes son suficientes para tener éxito en la universidad, independiente de la carrera que estudien.;0;Basados en varios estudios lingüísticos, actualmente se plantea que las prácticas discursivas, pedagógicas y evaluativas debieran ser estandarizadas entre todas las disciplinas;0;Varias universidades han comenzado a implementar cursos para enseñar a los estudiantes las habilidades discursivas que sean pertinentes a sus disciplinas. ;1;El hecho que el éxito en la universidad pueda estar determinado por las habilidades lingüísticas generales de los estudiantes ha llevado a que varias universidades incluyan cursos para desarrollar habilidades comunicativas pertinentes a cada disciplina. ;0
+1;16;CAUSAL;"Los educadores plantean que sin importar las habilidades lingüísticas
+generales que poseen los estudiantes al finalizar su educación 
+secundaria, un factor que podría determinar su éxito o fracaso
+en la universidad es cómo se comunica el conocimiento en cada 
+disciplina./# Esta idea ha motivado una gran cantidad de estudios
+lingüísticos orientados a contribuir en la educación superior./# 
+
+Algunos lingüistas han llevado a cabo descripciones exhaustivas de 
+los patrones lingüísticos que mejor caracterizan los textos académicos 
+entre las disciplinas./# Han estudiado rasgos como la complejidad 
+sintáctica, la presencia-ausencia del autor y la organización de 
+contenidos./# Los hallazgos revelan que cada disciplina transmite su 
+conocimiento según sus propias convenciones y necesidades./# Basados 
+en estos hallazgos, varios especialistas sugieren que, en la educación 
+superior, las prácticas discursivas, pedagógicas y evaluativas deben 
+ser pertinentes a cada disciplina./# Estas sugerencias han cobrado 
+fuerza en la última década, lo que ha resultado en nuevas políticas 
+educativas./#
+
+Muchas universidades han comenzado a incluir cursos para enseñar a los
+estudiantes las habilidades comunicativas que sus disciplinas demandan."; Los investigadores educativos consideran que las habilidades lingüísticas generales de los estudiantes son suficientes para tener éxito en la universidad, independiente de la carrera que estudien.;0;Basados en varios estudios lingüísticos, actualmente se plantea que las prácticas discursivas, pedagógicas y evaluativas debieran ser estandarizadas entre todas las disciplinas.;0;Varias universidades han comenzado a implementar cursos para enseñar a los estudiantes las habilidades discursivas que sean pertinentes a sus disciplinas. ;1;El hecho que el éxito en la universidad pueda estar determinado por las habilidades lingüísticas generales de los estudiantes ha llevado a que varias universidades incluyan cursos para desarrollar habilidades comunicativas pertinentes a cada disciplina. ;0

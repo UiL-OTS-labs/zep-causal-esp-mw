@@ -59,7 +59,6 @@ Page choose_1of2_page
             options = LAYOUT_SHRINK_ITEMS;
         }
 
-
         LabelGadget message
         {
             init()
@@ -130,11 +129,19 @@ Page choose_1of2_page
 
     Response response
     {
-        int     goodvalue;      // correct answer to question (0 if n.a.)
-        int     value;          // response value: 1..2 (0 on timeout)
-        int     answer;
-        int     rt;             // response time [ms]
-        bool    correct;        // true if correct answer given (if applicable)
+        int   goodvalue;      // correct answer to question (0 if n.a.)
+        int   value;          // response value: 1..2 (0 on timeout)
+        int   answer;
+        int   rt;
+
+        // int[..]   all_rt;
+
+        // int     qa_rt;             // response time [ms]
+        // int     qb_rt;
+        // int     qc_rt;
+        // int     qd_rt;
+
+        bool  correct;        // true if correct answer given (if applicable)
 
 
         void clear()
@@ -143,6 +150,17 @@ Page choose_1of2_page
             value = 0;
             answer = -1;
             rt = -9999;
+            // while (n < rt.size)
+            // {
+            //     rt[n] = -9999;
+            //     n++;
+            // }
+
+            //qa_rt = -9999;
+            // qb_rt = -9999;
+            // qc_rt = -9999;
+            // qd_rt = -9999;
+            
             correct = false;
         }
 
@@ -231,12 +249,12 @@ Page choose_1of2_page
         answer2 = k2;
     }
 
-
     void action(Object caller, int correct=0, dur timeout=0s, 
         dur showdelay=-1s, dur fadedur=-1s)
     {
         response.clear();
         response.goodvalue = correct;
+        //sponse.rt = rt;
 
         // Force page show delay and transition duration in sane range.
         if (showdelay < 0s) showdelay = page_transition_delay;
@@ -248,7 +266,7 @@ Page choose_1of2_page
     	page_transition_delay = 0s;
 
     	// Clear first trial delay.
-	first_trial_delay = 0s;
+	    first_trial_delay = 0s;
 
         if (test_window1.show_page(this, now() + showdelay, fadedur) == 0)
         {
