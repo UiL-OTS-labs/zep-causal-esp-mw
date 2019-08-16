@@ -58,18 +58,25 @@ Block task
                 "<b>Bienvenido(a)</b>,\n"
                 "\n"
                 "Gracias por participar en esta actividad.\n"       
-                "A continuación te presentaremos varios textos sobre\n"
-                "diferentes temáticas de tu carrera. Los textos serán\n"
-                "presentados oración por oración. Solo cuando hayas\n"
-                "terminado de leer una oración, presiona la BARRA\n" 
-                "ESPACIADORA para que aparezca la siguiente.\n"
+		"\n"
+
+                "A continuación te presentaremos varios textos sobre diferentes temáticas\n"
+ 		"de tu carrera.\n"
+		"\n"
+
+                
+		"Los textos serán presentados oración por oración. Solo cuando hayas\n"
+                "terminado de leer una oración, presiona la BARRA ESPACIADORA para que \n"
+		"aparezca la siguiente.\n"
                 "\n" 
-                "Es importante que leas los textos a una velocidad normal,\n"
-                "pero asegúrate de comprenderlos, ya que después de cada\n"
-                "texto te presentaremos algunas oraciones. Tu tarea será\n"
-                "determinar si esas oraciones son Verdaderas o Falsas. Para\n"
-                "responder, debes presionar la tecla verde  (Verdadero) o \n"
-                "rojo (Falso) del teclado.\n"
+
+                "Es importante que leas los textos a una velocidad normal, pero asegúrate\n" 
+		"de comprenderlos, ya que después de cada texto te presentaremos algunas \n" 
+		"oraciones. Tu tarea será determinar si esas oraciones son Verdaderas o Falsas.\n"
+		"\n"                 
+		"Para responder, debes presionar la tecla verde  (Verdadero) o \n"
+                "roja (Falso) del teclado.\n"
+
                 "\n"         
                 "Antes de comenzar, haremos una breve práctica.\n"
                 "\n"
@@ -125,8 +132,8 @@ Block task
                 on_event:entry()
                 {
                     pause_page.set_text(
-                        "Según el texto que acabas de leer, determina si la\n"
-                        "siguiente oración es Verdadera o Falsa.\n", true);
+                        "Según el texto que acabas de leer, determina si las siguientes oraciones son\n"
+                        "Verdaderas o Falsas.\n", true);
 
                     pause_page.action(this);
                     //control.button_box.enable_all_buttons(CONTINUE);
@@ -140,7 +147,7 @@ Block task
                 {
                     control.target = choose_1of2_page;
                     choose_1of2_page.set_text(item.question_a);
-                    choose_1of2_page.set_label_texts(" Verdadera ", " Falso ");
+                    choose_1of2_page.set_label_texts(" Verdadero ", " Falso ");
                     choose_1of2_page.set_answer_values(1, 0);
 
                     choose_1of2_page.set_keys(KEY_Shift_L, KEY_Shift_R);
@@ -156,7 +163,7 @@ Block task
                 {
                     control.target = choose_1of2_page;
                     choose_1of2_page.set_text(item.question_b);
-                    choose_1of2_page.set_label_texts(" Verdadera ", " Falso ");
+                    choose_1of2_page.set_label_texts(" Verdadero ", " Falso ");
                     choose_1of2_page.set_answer_values(1, 0);
 
                     choose_1of2_page.set_keys(KEY_Shift_L, KEY_Shift_R);
@@ -170,7 +177,7 @@ Block task
                 {
                     control.target = choose_1of2_page;
                     choose_1of2_page.set_text(item.question_c);
-                    choose_1of2_page.set_label_texts(" Verdadera ", " Falso ");
+                    choose_1of2_page.set_label_texts(" Verdadero ", " Falso ");
                     choose_1of2_page.set_answer_values(1, 0);
 
                     choose_1of2_page.set_keys(KEY_Shift_L, KEY_Shift_R);
@@ -184,7 +191,7 @@ Block task
                 {
                     control.target = choose_1of2_page;
                     choose_1of2_page.set_text(item.question_d);
-                    choose_1of2_page.set_label_texts(" Verdadera ", " Falso ");
+                    choose_1of2_page.set_label_texts(" Verdadero ", " Falso ");
                     choose_1of2_page.set_answer_values(1, 0);
 
                     choose_1of2_page.set_keys(KEY_Shift_L, KEY_Shift_R);
@@ -310,7 +317,7 @@ Block task
                 {
                     control.target = choose_1of2_page;
                     choose_1of2_page.set_text(item.question_a);
-                    choose_1of2_page.set_label_texts(" Verdadera ", " Falso ");
+                    choose_1of2_page.set_label_texts(" Verdadero ", " Falso ");
                     choose_1of2_page.set_answer_values(1, 0);
                     choose_1of2_page.set_keys(KEY_Shift_L, KEY_Shift_R);
                     choose_1of2_page.action(this, item.qans_a);
@@ -336,7 +343,7 @@ Block task
                 {
                     control.target = choose_1of2_page;
                     choose_1of2_page.set_text(item.question_b);
-                    choose_1of2_page.set_label_texts(" Verdadera ", " Falso ");
+                    choose_1of2_page.set_label_texts(" Verdadero ", " Falso ");
                     choose_1of2_page.set_answer_values(1, 0);
                     choose_1of2_page.set_keys(KEY_Shift_L, KEY_Shift_R);
                     choose_1of2_page.action(this, item.qans_b);
@@ -360,7 +367,7 @@ Block task
                 {
                     control.target = choose_1of2_page;
                     choose_1of2_page.set_text(item.question_c);
-                    choose_1of2_page.set_label_texts(" Verdadera ", " Falso ");
+                    choose_1of2_page.set_label_texts(" Verdadero ", " Falso ");
                     choose_1of2_page.set_answer_values(1, 0);
                     choose_1of2_page.set_keys(KEY_Shift_L, KEY_Shift_R);
                     choose_1of2_page.action(this, item.qans_c);
@@ -384,7 +391,7 @@ Block task
                 {
                     control.target = choose_1of2_page;
                     choose_1of2_page.set_text(item.question_d);
-                    choose_1of2_page.set_label_texts(" Verderada ", " Falso ");
+                    choose_1of2_page.set_label_texts(" Verdadero ", " Falso ");
                     choose_1of2_page.set_answer_values(1, 0);
                     choose_1of2_page.set_keys(KEY_Shift_L, KEY_Shift_R);
                     choose_1of2_page.action(this, item.qans_d);
