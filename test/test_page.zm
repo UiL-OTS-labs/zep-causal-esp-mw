@@ -16,6 +16,14 @@ HISTORY:
 
 \******************************************************************************/
 
+Timer start_trial_timer
+{
+    on_event:expire()
+    {
+        abort();
+        test_page.response.process_hit(event_time);
+    }
+}
 
 Page test_page
 {
@@ -162,6 +170,8 @@ Page test_page
             // response interval and start next stimulus/response interval.
             if (validity == HIT_VALID)
             {
+                start_trial_timer.abort();
+
                 if (measure)
                 {
                     if (measnum <= MAX_STARRED_SEGMENTS)
@@ -353,6 +363,9 @@ Page test_page
 
         // Response interval starts at fixation symbol onset.
         response.start(fixonset);
+
+        // Start timer
+        start_trial_timer.start(fixonset + FIX_CROSS_DUR);
 
 
         // Update progress counter (if enabled).

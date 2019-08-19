@@ -27,3 +27,7 @@ const int       MAX_STARRED_SEGMENTS            = 20;
 
 // Chance of presenting a question/statement (0..100%).
 const int       STATEMENT_CHANCE                = 100;
+
+// Duration of the fix_cross.
+const dur       FIX_CROSS_DUR                   = 1000ms;
+
