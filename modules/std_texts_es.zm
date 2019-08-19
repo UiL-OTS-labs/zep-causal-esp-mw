@@ -1,0 +1,34 @@
+/******************************************************************************\
+FILE:           std_texts_es.zm
+AUTHOR:         Theo Veenker <theo.veenker@beexy.nl>
+ADAPTED BY:     -
+
+DESCRIPTION:
+
+Defines texts on buttons and other graphic elements.
+Spanish version.
+
+
+HISTORY:
+2011-04-31 TV   Created as part of the standard Zep modules.
+
+\******************************************************************************/
+
+
+// Button texts.
+const string    CONTINUE_BUTTON_TEXT            = "Continuar";
+const string    NEXT_BUTTON_TEXT                = "Siguiente";
+const string    REPEAT_BUTTON_TEXT              = "Repetir";
+const string    YES_BUTTON_TEXT                 = "Sí";
+const string    NO_BUTTON_TEXT                  = "No";
+const string    TRUE_BUTTON_TEXT                = "Verdadero";
+const string    FALSE_BUTTON_TEXT               = "Falso";
+const string    CORRECT_BUTTON_TEXT             = "Correcto";
+const string    INCORRECT_BUTTON_TEXT           = "Incorrecto";
+const string    FIRST_BUTTON_TEXT               = "1o";
+const string    SECOND_BUTTON_TEXT              = "2o";
+
+
+// Other texts.
+const string    WELCOME_TEXT                    = "Bienvenido";
+const string    THANK_YOU_TEXT                  = "Fin del experimento\n\nMuchas gracias!";
