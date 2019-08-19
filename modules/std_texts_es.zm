@@ -30,5 +30,5 @@ const string    SECOND_BUTTON_TEXT              = "2o";
 
 
 // Other texts.
-const string    WELCOME_TEXT                    = "Bienvenido";
+const string    WELCOME_TEXT                    = "Bienvenido(a)";
 const string    THANK_YOU_TEXT                  = "Fin del experimento\n\nMuchas gracias!";
